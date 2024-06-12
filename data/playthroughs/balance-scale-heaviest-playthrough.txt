@@ -1,0 +1,136 @@
+Task Description: Your task is to put all heaviest cubes into the box.
+
+Initial Observation: You find yourself in a room.  In the room, you see:
+        yourself
+        a balance scale (ID: 2) with two plates. The scale is in balance. The left plate is empty. The right plate is empty.
+        a white cube (ID: 5)
+        a blue cube (ID: 6)
+        a yellow cube (ID: 7)
+        the box (ID: 8)
+
+
+Type 'help' for a list of possible actions.
+
+> take white cube (ID: 5)
+Observation: The white cube (ID: 5) is removed from the room (ID: 1). You put the white cube (ID: 5) in your inventory.
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put white cube (ID: 5) in left side of the balance scale (ID: 3)
+Observation: The white cube (ID: 5) is removed from the agent (ID: 0).
+The white cube (ID: 5) is placed in the left side of the balance scale (ID: 3).
+
+Current step: 2
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take blue cube (ID: 6)
+Observation: The blue cube (ID: 6) is removed from the room (ID: 1). You put the blue cube (ID: 6) in your inventory.
+
+Current step: 3
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put blue cube (ID: 6) in right side of the balance scale (ID: 4)
+Observation: The blue cube (ID: 6) is removed from the agent (ID: 0).
+The blue cube (ID: 6) is placed in the right side of the balance scale (ID: 4).
+
+Current step: 4
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a room.  In the room, you see:
+        yourself
+        a balance scale (ID: 2) with two plates. The left side of the scale is higher than the right side. The left plate contains a white cube (ID: 5). The right plate contains a blue cube (ID: 6).
+        a yellow cube (ID: 7)
+        the box (ID: 8)
+
+
+Current step: 5
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take white cube (ID: 5)
+Observation: The white cube (ID: 5) is removed from the left side of the balance scale (ID: 3). You put the white cube (ID: 5) in your inventory.
+
+Current step: 6
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take yellow cube (ID: 7)
+Observation: The yellow cube (ID: 7) is removed from the room (ID: 1). You put the yellow cube (ID: 7) in your inventory.
+
+Current step: 7
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put yellow cube (ID: 7) in left side of the balance scale (ID: 3)
+Observation: The yellow cube (ID: 7) is removed from the agent (ID: 0).
+The yellow cube (ID: 7) is placed in the left side of the balance scale (ID: 3).
+
+Current step: 8
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a room.  In the room, you see:
+        yourself
+        a balance scale (ID: 2) with two plates. The left side of the scale is higher than the right side. The left plate contains a yellow cube (ID: 7). The right plate contains a blue cube (ID: 6).
+        the box (ID: 8)
+
+
+Current step: 9
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take blue cube (ID: 6)
+Observation: The blue cube (ID: 6) is removed from the right side of the balance scale (ID: 4). You put the blue cube (ID: 6) in your inventory.
+
+Current step: 10
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put blue cube (ID: 6) in box (ID: 8)
+Observation: The blue cube (ID: 6) is removed from the agent (ID: 0).
+The blue cube (ID: 6) is placed in the box (ID: 8).
+
+Current step: 11
+Score: 1
+Reward: 1
+Game Over: True
+Game Won: True
+
+----------------------------------------

@@ -1,0 +1,7 @@
+bytes32==1.1.0
+openai==1.6.1
+tiktoken==0.5.2
+pandas==2.1.4
+plotly==5.19.0
+kaleido==0.2.1
+termcolor==2.4.0

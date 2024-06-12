@@ -1,0 +1,81 @@
+Task Description: It is a summer noon. The sky is clear. Your task is to take a ball from the beach and put it in the box in the house. Protect yourself from sunburn!
+
+Initial Observation: You find yourself in a house (ID: 2).  In the house (ID: 2), you see:
+        yourself
+        a bottle of sunscreen (ID: 4)
+        a box (ID: 5)
+        a bottle of detergent (ID: 6)
+        a bottle of water (ID: 7)
+You also see:
+         a way to the beach (ID: 3)
+
+
+Type 'help' for a list of possible actions.
+
+> use sunscreen (ID: 4)
+Observation: You use sunscreen (ID: 4) on yourself.
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> move to beach (ID: 3)
+Observation: You move from house (ID: 2) to beach (ID: 3).
+
+Current step: 2
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a beach (ID: 3).  In the beach (ID: 3), you see:
+        a ball (ID: 8)
+        a chair (ID: 9)
+        yourself
+You also see:
+         a way to the house (ID: 2)
+
+
+Current step: 3
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take ball (ID: 8)
+Observation: The ball (ID: 8) is removed from the beach (ID: 3). You put the ball (ID: 8) in your inventory.
+
+Current step: 4
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> move to house (ID: 2)
+Observation: You move from beach (ID: 3) to house (ID: 2).
+
+Current step: 5
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put ball (ID: 8) in box (ID: 5)
+Observation: The ball (ID: 8) is removed from the agent (ID: 0).
+The ball (ID: 8) is placed in the box (ID: 5).
+
+Current step: 6
+Score: 1
+Reward: 1
+Game Over: True
+Game Won: True
+
+----------------------------------------

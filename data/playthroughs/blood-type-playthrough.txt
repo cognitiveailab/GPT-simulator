@@ -1,0 +1,44 @@
+Task Description: Your task is to give a correct type of blood to the patient.
+
+Initial Observation: You find yourself in an emergency room.  In the room, you see:
+        yourself
+        a patient (ID: 2) whose blood type is Type O negative
+        a bag of Type O negative blood (ID: 3)
+        a bag of Type B negative blood (ID: 4)
+        a bag of Type B positive blood (ID: 5)
+        a bag of Type O positive blood (ID: 6)
+        a bag of Type AB negative blood (ID: 7)
+
+
+Type 'help' for a list of possible actions.
+
+> give Type O negative blood (ID: 3) to patient (ID: 2)
+Observation: You need to take the blood first.
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take Type O negative blood (ID: 3)
+Observation: The Type O negative blood (ID: 3) is removed from the emergency room (ID: 1). You put the Type O negative blood (ID: 3) in your inventory.
+
+Current step: 2
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> give Type O negative blood (ID: 3) to patient (ID: 2)
+Observation: You give a bag of Type O negative blood (ID: 3) to patient (ID: 2)
+
+Current step: 3
+Score: 1
+Reward: 1
+Game Over: True
+Game Won: True
+
+----------------------------------------

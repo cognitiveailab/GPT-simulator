@@ -1,0 +1,318 @@
+Task Description: Your task is to wash the dirty dishes.
+
+Initial Observation: You find yourself in a kitchen.  In the kitchen, you see:
+        yourself
+        a dishwasher (ID: 2) that is currently closed
+        a bottle of dish soap (ID: 3)
+        a dirty cup (ID: 4) that looks to have half-eaten pieces of peanut butter in it
+        a dirty plate (ID: 5) that looks to have half-eaten pieces of orange on it
+        a dirty mug (ID: 6) that looks to have half-eaten pieces of sandwhich in it
+        a clean knife (ID: 7)
+        a clean glass (ID: 8)
+        a clean bowl (ID: 9)
+        a banana (ID: 10)
+        a apple (ID: 11)
+
+
+Type 'help' for a list of possible actions.
+
+> take apple (ID: 11)
+Observation: The apple (ID: 11) is removed from the kitchen (ID: 1). You put the apple (ID: 11) in your inventory.
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> eat apple (ID: 11) with knife (ID: 7)
+Observation: You eat the apple using the knife.
+
+Current step: 2
+Score: -1
+Reward: -1
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a kitchen.  In the kitchen, you see:
+        yourself
+        a dishwasher (ID: 2) that is currently closed
+        a bottle of dish soap (ID: 3)
+        a dirty cup (ID: 4) that looks to have half-eaten pieces of peanut butter in it
+        a dirty plate (ID: 5) that looks to have half-eaten pieces of orange on it
+        a dirty mug (ID: 6) that looks to have half-eaten pieces of sandwhich in it
+        a clean glass (ID: 8)
+        a clean bowl (ID: 9)
+        a banana (ID: 10)
+        a dirty knife (ID: 7) that looks to have half-eaten pieces of apple (ID: 11) in it
+
+
+Current step: 3
+Score: -1
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take cup (ID: 4)
+Observation: The dirty cup (ID: 4) is removed from the kitchen (ID: 1). You put the dirty cup (ID: 4) in your inventory.
+
+Current step: 4
+Score: -1
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take plate (ID: 5)
+Observation: The dirty plate (ID: 5) is removed from the kitchen (ID: 1). You put the dirty plate (ID: 5) in your inventory.
+
+Current step: 5
+Score: -1
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take mug (ID: 6)
+Observation: The dirty mug (ID: 6) is removed from the kitchen (ID: 1). You put the dirty mug (ID: 6) in your inventory.
+
+Current step: 6
+Score: -1
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take knife (ID: 7)
+Observation: The dirty knife (ID: 7) is removed from the kitchen (ID: 1). You put the dirty knife (ID: 7) in your inventory.
+
+Current step: 7
+Score: -1
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put cup (ID: 4) in dishwasher (ID: 2)
+Observation: The dishwasher (ID: 2) is closed, so things can't be placed there.
+
+Current step: 8
+Score: -1
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> open dishwasher (ID: 2)
+Observation: The dishwasher (ID: 2) is now open.
+
+Current step: 9
+Score: -1
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put cup (ID: 4) in dishwasher (ID: 2)
+Observation: The dirty cup (ID: 4) is removed from the agent (ID: 0).
+The dirty cup (ID: 4) is placed in the dishwasher (ID: 2).
+
+Current step: 10
+Score: -1
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put plate (ID: 5) in dishwasher (ID: 2)
+Observation: The dirty plate (ID: 5) is removed from the agent (ID: 0).
+The dirty plate (ID: 5) is placed in the dishwasher (ID: 2).
+
+Current step: 11
+Score: -1
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put mug (ID: 6) in dishwasher (ID: 2)
+Observation: The dirty mug (ID: 6) is removed from the agent (ID: 0).
+The dirty mug (ID: 6) is placed in the dishwasher (ID: 2).
+
+Current step: 12
+Score: -1
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put knife (ID: 7) in dishwasher (ID: 2)
+Observation: The dirty knife (ID: 7) is removed from the agent (ID: 0).
+The dirty knife (ID: 7) is placed in the dishwasher (ID: 2).
+
+Current step: 13
+Score: -1
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> turn on dishwasher (ID: 2)
+Observation: The dishwasher (ID: 2) is opened, so it can't be turned on.
+
+Current step: 14
+Score: -1
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> close dishwasher (ID: 2)
+Observation: The dishwasher (ID: 2) is now closed.
+
+Current step: 15
+Score: -1
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a kitchen.  In the kitchen, you see:
+        yourself
+        a dishwasher (ID: 2) that is currently closed
+        a bottle of dish soap (ID: 3)
+        a clean glass (ID: 8)
+        a clean bowl (ID: 9)
+        a banana (ID: 10)
+
+
+Current step: 16
+Score: -1
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> turn on dishwasher (ID: 2)
+Observation: The dishwasher (ID: 2) is now turned on.
+
+Current step: 17
+Score: -1
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a kitchen.  In the kitchen, you see:
+        yourself
+        a dishwasher (ID: 2) that is currently on
+        a bottle of dish soap (ID: 3)
+        a clean glass (ID: 8)
+        a clean bowl (ID: 9)
+        a banana (ID: 10)
+
+
+Current step: 18
+Score: -1
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a kitchen.  In the kitchen, you see:
+        yourself
+        a dishwasher (ID: 2) that is currently on
+        a bottle of dish soap (ID: 3)
+        a clean glass (ID: 8)
+        a clean bowl (ID: 9)
+        a banana (ID: 10)
+
+
+Current step: 19
+Score: -1
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a kitchen.  In the kitchen, you see:
+        yourself
+        a dishwasher (ID: 2) with a blinking green light that is currently closed
+        a bottle of dish soap (ID: 3)
+        a clean glass (ID: 8)
+        a clean bowl (ID: 9)
+        a banana (ID: 10)
+
+
+Current step: 20
+Score: -1
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> open dishwasher (ID: 2)
+Observation: The dishwasher (ID: 2) is now open.
+
+Current step: 21
+Score: -1
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> use bottle of dish soap (ID: 3) on dishwasher (ID: 2)
+Observation: You squirt some dish soap into the dishwasher.
+
+Current step: 22
+Score: -1
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> close dishwasher (ID: 2)
+Observation: The dishwasher (ID: 2) is now closed.
+
+Current step: 23
+Score: -1
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> turn on dishwasher (ID: 2)
+Observation: The dishwasher (ID: 2) is now turned on.
+
+Current step: 24
+Score: -1
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a kitchen.  In the kitchen, you see:
+        yourself
+        a dishwasher (ID: 2) that is currently on
+        a bottle of dish soap (ID: 3)
+        a clean glass (ID: 8)
+        a clean bowl (ID: 9)
+        a banana (ID: 10)
+
+
+Current step: 25
+Score: 3
+Reward: 4
+Game Over: True
+Game Won: True
+
+----------------------------------------

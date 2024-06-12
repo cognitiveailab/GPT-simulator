@@ -1,0 +1,59 @@
+Task Description: Your task is to put bandages on any cuts.
+
+Initial Observation: You find yourself in a bathroom.  Around you, you see:
+        a sticker (ID: 10) with a picture of a fish
+        yourself
+        a baseball hat (ID: 15)
+        a person (ID: 2) that looks to have a left foot (ID: 3) that has a wound, a head (ID: 5), a right foot (ID: 4), a right hand (ID: 7), and a left hand (ID: 6)
+        a bandage box (ID: 8) that is closed
+
+
+Type 'help' for a list of possible actions.
+
+> open bandage box (ID: 8)
+Observation: The bandage box (ID: 8) is now open.
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a bathroom.  Around you, you see:
+        a sticker (ID: 10) with a picture of a fish
+        yourself
+        a baseball hat (ID: 15)
+        a person (ID: 2) that looks to have a left foot (ID: 3) that has a wound, a head (ID: 5), a right foot (ID: 4), a right hand (ID: 7), and a left hand (ID: 6)
+        a bandage box (ID: 8) that is open and that looks to have a bandage (ID: 9) in it
+
+
+Current step: 2
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take bandage (ID: 9)
+Observation: The bandage (ID: 9) is removed from the bandage box (ID: 8). You put the bandage (ID: 9) in your inventory.
+
+Current step: 3
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put bandage (ID: 9) on left foot (ID: 3)
+Observation: The bandage (ID: 9) is removed from the agent (ID: 0).
+The bandage (ID: 9) is placed in the left foot (ID: 3).
+
+Current step: 4
+Score: 1
+Reward: 1
+Game Over: True
+Game Won: True
+
+----------------------------------------

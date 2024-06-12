@@ -1,0 +1,159 @@
+Task Description: Your task is to plant the tree and water it.
+
+Initial Observation: You are in the garden.  In the garden, you see:
+        yourself
+        a shovel (ID: 2)
+        a hammer (ID: 3)
+        a screwer (ID: 4)
+        a sink (ID: 5) that is currently off and that is empty
+        a bucket (ID: 6) that is empty
+        a jug (ID: 7) that is empty
+        a tree (ID: 8)
+
+
+Type 'help' for a list of possible actions.
+
+> take shovel (ID: 2)
+Observation:  You put the shovel (ID: 2) in your inventory.
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> dig with shovel (ID: 2)
+Observation: You dig a hole on the ground. You get some soil.
+
+Current step: 2
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take tree (ID: 8)
+Observation:  You put the tree (ID: 8) in your inventory.
+
+Current step: 3
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You are in the garden.  In the garden, you see:
+        yourself
+        a hammer (ID: 3)
+        a screwer (ID: 4)
+        a sink (ID: 5) that is currently off and that is empty
+        a bucket (ID: 6) that is empty
+        a jug (ID: 7) that is empty
+        a hole (ID: 9) that is empty
+
+
+Current step: 4
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put tree (ID: 8) in hole (ID: 9)
+Observation:
+The tree (ID: 8) is placed in the hole (ID: 9).
+
+Current step: 5
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> inventory
+Observation: You have the following items in your inventory:
+        a shovel (ID: 2)
+        dry soil (ID: 10)
+
+
+Current step: 6
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put soil (ID: 10) in hole (ID: 9)
+Observation:
+The soil (ID: 10) is placed in the hole (ID: 9).
+
+Current step: 7
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take jug (ID: 7)
+Observation:  You put the jug (ID: 7) in your inventory.
+
+Current step: 8
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put jug (ID: 7) in sink (ID: 5)
+Observation:
+The jug (ID: 7) is placed in the sink (ID: 5).
+
+Current step: 9
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> turn on sink (ID: 5)
+Observation: The sink (ID: 5) is now turned on.
+
+Current step: 10
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> turn off sink (ID: 5)
+Observation: The sink (ID: 5) is now turned off.
+
+Current step: 11
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take jug (ID: 7)
+Observation:  You put the jug (ID: 7) in your inventory.
+
+Current step: 12
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> pour water in jug (ID: 7) into soil (ID: 10)
+Observation: You pour water into soil (ID: 10)
+
+Current step: 13
+Score: 1
+Reward: 1
+Game Over: True
+Game Won: True
+
+----------------------------------------

@@ -1,0 +1,207 @@
+Task Description: Your task is to figure out the weight of the cube. Use the answer action to give your answer.
+
+Initial Observation: You find yourself in a room.  In the room, you see:
+        yourself
+        a balance scale (ID: 2) with two plates. The scale is in balance. The left plate is empty. The right plate is empty.
+        1g weight 0 (ID: 5)
+        1g weight 1 (ID: 6)
+        2g weight 2 (ID: 7)
+        5g weight 3 (ID: 8)
+        10g weight 4 (ID: 9)
+        a cube (ID: 10)
+        the box (ID: 11)
+
+
+Type 'help' for a list of possible actions.
+
+> take cube (ID: 10)
+Observation: The cube (ID: 10) is removed from the room (ID: 1). You put the cube (ID: 10) in your inventory.
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put cube (ID: 10) in left side of the balance scale (ID: 3)
+Observation: The cube (ID: 10) is removed from the agent (ID: 0).
+The cube (ID: 10) is placed in the left side of the balance scale (ID: 3).
+
+Current step: 2
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take weight 4 (ID: 9)
+Observation: The weight 4 (ID: 9) is removed from the room (ID: 1). You put the weight 4 (ID: 9) in your inventory.
+
+Current step: 3
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put weight 4 (ID: 9) in right side of the balance scale (ID: 4)
+Observation: The weight 4 (ID: 9) is removed from the agent (ID: 0).
+The weight 4 (ID: 9) is placed in the right side of the balance scale (ID: 4).
+
+Current step: 4
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a room.  In the room, you see:
+        yourself
+        a balance scale (ID: 2) with two plates. The left side of the scale is lower than the right side. The left plate contains a cube (ID: 10). The right plate contains 10g weight 4 (ID: 9).
+        1g weight 0 (ID: 5)
+        1g weight 1 (ID: 6)
+        2g weight 2 (ID: 7)
+        5g weight 3 (ID: 8)
+        the box (ID: 11)
+
+
+Current step: 5
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take weight 3 (ID: 8)
+Observation: The weight 3 (ID: 8) is removed from the room (ID: 1). You put the weight 3 (ID: 8) in your inventory.
+
+Current step: 6
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put weight 3 (ID: 8) in right side of the balance scale (ID: 4)
+Observation: The weight 3 (ID: 8) is removed from the agent (ID: 0).
+The weight 3 (ID: 8) is placed in the right side of the balance scale (ID: 4).
+
+Current step: 7
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a room.  In the room, you see:
+        yourself
+        a balance scale (ID: 2) with two plates. The left side of the scale is higher than the right side. The left plate contains a cube (ID: 10). The right plate contains 10g weight 4 (ID: 9), and 5g weight 3 (ID: 8).
+        1g weight 0 (ID: 5)
+        1g weight 1 (ID: 6)
+        2g weight 2 (ID: 7)
+        the box (ID: 11)
+
+
+Current step: 8
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take weight 3 (ID: 8)
+Observation: The weight 3 (ID: 8) is removed from the right side of the balance scale (ID: 4). You put the weight 3 (ID: 8) in your inventory.
+
+Current step: 9
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take weight 2 (ID: 7)
+Observation: The weight 2 (ID: 7) is removed from the room (ID: 1). You put the weight 2 (ID: 7) in your inventory.
+
+Current step: 10
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put weight 2 (ID: 7) in right side of the balance scale (ID: 4)
+Observation: The weight 2 (ID: 7) is removed from the agent (ID: 0).
+The weight 2 (ID: 7) is placed in the right side of the balance scale (ID: 4).
+
+Current step: 11
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a room.  In the room, you see:
+        yourself
+        a balance scale (ID: 2) with two plates. The left side of the scale is lower than the right side. The left plate contains a cube (ID: 10). The right plate contains 10g weight 4 (ID: 9), and 2g weight 2 (ID: 7).
+        1g weight 0 (ID: 5)
+        1g weight 1 (ID: 6)
+        the box (ID: 11)
+
+
+Current step: 12
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take weight 1 (ID: 6)
+Observation: The weight 1 (ID: 6) is removed from the room (ID: 1). You put the weight 1 (ID: 6) in your inventory.
+
+Current step: 13
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put weight 1 (ID: 6) in right side of the balance scale (ID: 4)
+Observation: The weight 1 (ID: 6) is removed from the agent (ID: 0).
+The weight 1 (ID: 6) is placed in the right side of the balance scale (ID: 4).
+
+Current step: 14
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a room.  In the room, you see:
+        yourself
+        a balance scale (ID: 2) with two plates. The scale is in balance. The left plate contains a cube (ID: 10). The right plate contains 10g weight 4 (ID: 9), 2g weight 2 (ID: 7), and 1g weight 1 (ID: 6).
+        1g weight 0 (ID: 5)
+        the box (ID: 11)
+
+
+Current step: 15
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> answer 13g
+Observation: You believe the cube weighs 13g.
+
+Current step: 16
+Score: 1
+Reward: 1
+Game Over: True
+Game Won: True
+
+----------------------------------------

@@ -1,0 +1,174 @@
+Task Description: Your task is to prepare a meal following the instructions of the cook book.
+
+Initial Observation: You find yourself in a kitchen.  In the kitchen, you see:
+        yourself
+        the patato (ID: 2)
+        the carrot (ID: 3)
+        the onion (ID: 4)
+        the cucumber (ID: 5)
+        the green hot pepper (ID: 6)
+        the cook book (ID: 7)
+        the knife (ID: 8)
+        the stove (ID: 9)
+        the oven (ID: 10)
+
+
+Type 'help' for a list of possible actions.
+
+> take cook book (ID: 7)
+Observation: The cook book (ID: 7) is removed from the kitchen (ID: 1). You put the cook book (ID: 7) in your inventory.
+
+Current step: 1
+Score: 0.0
+Reward: 0.0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> read cook book (ID: 7)
+Observation: Gather all following ingredients and follow the directions to prepare this tasty meal.
+
+Ingredients:
+        patato (ID: 2)
+        carrot (ID: 3)
+        onion (ID: 4)
+        cucumber (ID: 5)
+
+Directions:
+        dice the patato (ID: 2)
+        roast the patato (ID: 2)
+        roast the carrot (ID: 3)
+        dice the onion (ID: 4)
+        fry the onion (ID: 4)
+        roast the cucumber (ID: 5)
+        prepare meal
+
+
+Current step: 2
+Score: 0.0
+Reward: 0.0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take knife (ID: 8)
+Observation: The knife (ID: 8) is removed from the kitchen (ID: 1). You put the knife (ID: 8) in your inventory.
+
+Current step: 3
+Score: 0.0
+Reward: 0.0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take patato (ID: 2)
+Observation: The patato (ID: 2) is removed from the kitchen (ID: 1). You put the patato (ID: 2) in your inventory.
+
+Current step: 4
+Score: 0.09
+Reward: 0.09
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> dice patato (ID: 2) with knife (ID: 8)
+Observation: You dice the patato (ID: 2).
+
+Current step: 5
+Score: 0.18
+Reward: 0.09
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> cook patato (ID: 2) in oven (ID: 10)
+Observation: You roast the patato (ID: 2) in the oven (ID: 10)
+
+Current step: 6
+Score: 0.27
+Reward: 0.09
+Game Over: False
+Game Won: False
+
+----------------------------------------
+>
+> take carrot (ID: 3)
+Observation: The carrot (ID: 3) is removed from the kitchen (ID: 1). You put the carrot (ID: 3) in your inventory.
+
+Current step: 7
+Score: 0.36
+Reward: 0.09
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> cook carrot (ID: 3) in oven (ID: 10)
+Observation: You roast the carrot (ID: 3) in the oven (ID: 10)
+
+Current step: 8
+Score: 0.45
+Reward: 0.09
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take onion (ID: 4)
+Observation: The onion (ID: 4) is removed from the kitchen (ID: 1). You put the onion (ID: 4) in your inventory.
+
+Current step: 9
+Score: 0.55
+Reward: 0.1
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> dice onion (ID: 4) with knife (ID: 8)
+Observation: You dice the onion (ID: 4).
+
+Current step: 10
+Score: 0.64
+Reward: 0.09
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> cook onion (ID: 4) in stove (ID: 9)
+Observation: You fry the onion (ID: 4) in the stove (ID: 9)
+
+Current step: 11
+Score: 0.73
+Reward: 0.09
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take cucumber (ID: 5)
+Observation: The cucumber (ID: 5) is removed from the kitchen (ID: 1). You put the cucumber (ID: 5) in your inventory.
+
+Current step: 12
+Score: 0.82
+Reward: 0.09
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> cook cucumber (ID: 5) in oven (ID: 10)
+Observation: You roast the cucumber (ID: 5) in the oven (ID: 10)
+
+Current step: 13
+Score: 0.91
+Reward: 0.09
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> prepare meal
+Observation: You prepare the meal.
+
+Current step: 14
+Score: 1.0
+Reward: 0.09
+Game Over: True
+Game Won: True
+
+----------------------------------------

@@ -1,0 +1,112 @@
+Task Description: Your task is to hatch the egg and raise the baby bird.
+
+Initial Observation: You are a mother bird in your nest.  In the nest, you see:
+	yourself
+	an egg
+
+
+Type 'help' for a list of possible actions.
+
+> sit on egg
+Observaton: You sit on the egg and keep it warm.
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> sit on egg
+Observaton: You sit on the egg and keep it warm.
+
+Current step: 2
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> sit on egg
+Observaton: You sit on the egg and keep it warm.
+
+Current step: 3
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> sit on egg
+Observaton: You sit on the egg and keep it warm.
+
+Current step: 4
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> sit on egg
+Observaton: You sit on the egg and keep it warm.
+The egg is hatched!
+
+Current step: 5
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> feed young bird
+Observaton: You feed the young bird.
+
+Current step: 6
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> feed young bird
+Observaton: You feed the young bird.
+
+Current step: 7
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> feed young bird
+Observaton: You feed the young bird.
+
+Current step: 8
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> feed young bird
+Observaton: You feed the young bird.
+
+Current step: 9
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> feed young bird
+Observaton: You feed the young bird.
+The young bird grows up.
+
+Current step: 10
+Score: 1
+Reward: 1
+Game Over: True
+Game Won: True
+
+----------------------------------------
+>

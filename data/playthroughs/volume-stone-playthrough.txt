@@ -1,0 +1,113 @@
+Task Description: Your task is to figure out the volume of the stone.
+
+Initial Observation: You are in a room.  In the room, you see:
+        yourself
+        a sink (ID: 2) that is currently off and that is empty
+        a stone (ID: 3)
+        a measuring cup (ID: 4) that is empty
+
+
+Type 'help' for a list of possible actions.
+
+> take measuring cup (ID: 4)
+Observation:  You put the measuring cup (ID: 4) in your inventory.
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put measuring cup (ID: 4) in sink (ID: 2)
+Observation:
+The measuring cup (ID: 4) is placed in the sink (ID: 2).
+
+Current step: 2
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> turn on sink (ID: 2)
+Observation: The sink (ID: 2) is now turned on.
+
+Current step: 3
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> turn off sink (ID: 2)
+Observation: The sink (ID: 2) is now turned off.
+
+Current step: 4
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take measuring cup (ID: 4)
+Observation:  You put the measuring cup (ID: 4) in your inventory.
+
+Current step: 5
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> examine measuring cup (ID: 4)
+Observation: a measuring cup (ID: 4) which reads 500 mL. In it, you see water (ID: 5).
+
+Current step: 6
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take stone (ID: 3)
+Observation:  You put the stone (ID: 3) in your inventory.
+
+Current step: 7
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put stone (ID: 3) in measuring cup (ID: 4)
+Observation:
+The stone (ID: 3) is placed in the measuring cup (ID: 4).
+
+Current step: 8
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> examine measuring cup (ID: 4)
+Observation: a measuring cup (ID: 4) which reads 849 mL. In it, you see water (ID: 5), a stone (ID: 3).
+
+Current step: 9
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> answer 349
+Observation: You believe the volume of the stone is 349 cm^3.
+
+Current step: 10
+Score: 1
+Reward: 1
+Game Over: True
+Game Won: True
+
+----------------------------------------

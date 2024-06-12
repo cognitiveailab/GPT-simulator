@@ -1,0 +1,158 @@
+Task Description: Your task is to make ice cubes.
+
+Initial Observation: You find yourself in a kitchen.  In the kitchen, you see:
+        yourself
+        a freezer (ID: 2) that is currently closed
+        a sink (ID: 4) that is currently off and that is empty
+        a pot (ID: 5) that is empty
+        a peanut butter (ID: 6)
+        a orange (ID: 7)
+
+
+Type 'help' for a list of possible actions.
+
+> open freezer (ID: 2)
+Observation: The freezer (ID: 2) is now open.
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> examine freezer (ID: 2)
+Observation: a freezer (ID: 2) that is currently open and contains the following items:
+        an ice cube tray (ID: 3) that is empty
+
+
+Current step: 2
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take ice cube tray (ID: 3)
+Observation: The ice cube tray (ID: 3) is removed from the freezer (ID: 2). You put the ice cube tray (ID: 3) in your inventory.
+
+Current step: 3
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put ice cube tray (ID: 3) in sink (ID: 4)
+Observation: The ice cube tray (ID: 3) is removed from the agent (ID: 0).
+The ice cube tray (ID: 3) is placed in the sink (ID: 4).
+
+Current step: 4
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> turn on sink (ID: 4)
+Observation: The sink (ID: 4) is now turned on.
+
+Current step: 5
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> turn off sink (ID: 4)
+Observation: The sink (ID: 4) is now turned off.
+
+Current step: 6
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take ice cube tray (ID: 3)
+Observation: The ice cube tray (ID: 3) is removed from the sink (ID: 4). You put the ice cube tray (ID: 3) in your inventory.
+
+Current step: 7
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put ice cube tray (ID: 3) in freezer (ID: 2)
+Observation: The ice cube tray (ID: 3) is removed from the agent (ID: 0).
+The ice cube tray (ID: 3) is placed in the freezer (ID: 2).
+
+Current step: 8
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> close freezer (ID: 2)
+Observation: The freezer (ID: 2) is now closed.
+
+Current step: 9
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a kitchen.  In the kitchen, you see:
+        yourself
+        a freezer (ID: 2) that is currently closed
+        a sink (ID: 4) that is currently off and that is empty
+        a pot (ID: 5) that is empty
+        a peanut butter (ID: 6)
+        a orange (ID: 7)
+
+
+Current step: 10
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a kitchen.  In the kitchen, you see:
+        yourself
+        a freezer (ID: 2) that is currently closed
+        a sink (ID: 4) that is currently off and that is empty
+        a pot (ID: 5) that is empty
+        a peanut butter (ID: 6)
+        a orange (ID: 7)
+
+
+Current step: 11
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a kitchen.  In the kitchen, you see:
+        yourself
+        a freezer (ID: 2) that is currently closed
+        a sink (ID: 4) that is currently off and that is empty
+        a pot (ID: 5) that is empty
+        a peanut butter (ID: 6)
+        a orange (ID: 7)
+
+
+Current step: 12
+Score: 1
+Reward: 1
+Game Over: True
+Game Won: True
+
+----------------------------------------

@@ -1,0 +1,466 @@
+Task Description: Here are two inclined planes with the same angle. Your task is figure out which of the two inclined planes has the most friction. Focus on the inclined plane with the most friction after your experiment.
+
+Initial Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2)
+        an inclined plane 2 (ID: 3)
+        block (ID: 4)
+        a stopwatch (ID: 5), which is deactivated
+
+
+Type 'help' for a list of possible actions.
+
+> take stopwatch (ID: 5)
+Observation: The stopwatch (ID: 5) is removed from the workshop (ID: 1). You put the stopwatch (ID: 5) in your inventory.
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take block (ID: 4)
+Observation: The block (ID: 4) is removed from the workshop (ID: 1). You put the block (ID: 4) in your inventory.
+
+Current step: 2
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put block (ID: 4) on inclined plane 1 (ID: 2)
+Observation: The block (ID: 4) is removed from the agent (ID: 0).
+The block (ID: 4) is placed in the inclined plane 1 (ID: 2).
+
+Current step: 3
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> activate stopwatch (ID: 5)
+Observation: You activate the stopwatch (ID: 5).
+
+Current step: 4
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2), with:a block (ID: 4) approximately 4.0% down the plane
+        an inclined plane 2 (ID: 3)
+
+
+Current step: 5
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2), with:a block (ID: 4) approximately 9.0% down the plane
+        an inclined plane 2 (ID: 3)
+
+
+Current step: 6
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2), with:a block (ID: 4) approximately 16.0% down the plane
+        an inclined plane 2 (ID: 3)
+
+
+Current step: 7
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2), with:a block (ID: 4) approximately 25.0% down the plane
+        an inclined plane 2 (ID: 3)
+
+
+Current step: 8
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2), with:a block (ID: 4) approximately 36.0% down the plane
+        an inclined plane 2 (ID: 3)
+
+
+Current step: 9
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2), with:a block (ID: 4) approximately 49.0% down the plane
+        an inclined plane 2 (ID: 3)
+
+
+Current step: 10
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2), with:a block (ID: 4) approximately 64.0% down the plane
+        an inclined plane 2 (ID: 3)
+
+
+Current step: 11
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2), with:a block (ID: 4) approximately 81.0% down the plane
+        an inclined plane 2 (ID: 3)
+
+
+Current step: 12
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2), with:a block (ID: 4) approximately 100.0% down the plane
+        an inclined plane 2 (ID: 3)
+
+
+Current step: 13
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> deactivate stopwatch (ID: 5)
+Observation: You deactivate the stopwatch (ID: 5).
+
+Current step: 14
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> examine stopwatch (ID: 5)
+Observation: a stopwatch (ID: 5), which is deactivated. The time reads 10 ticks.
+
+Current step: 15
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> reset stopwatch (ID: 5)
+Observation: You reset the stopwatch (ID: 5).
+
+Current step: 16
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take block (ID: 4)
+Observation: The block (ID: 4) is removed from the inclined plane 1 (ID: 2). You put the block (ID: 4) in your inventory.
+
+Current step: 17
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put block (ID: 4) on inclined plane 2 (ID: 3)
+Observation: The block (ID: 4) is removed from the agent (ID: 0).
+The block (ID: 4) is placed in the inclined plane 2 (ID: 3).
+
+Current step: 18
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> activate stopwatch (ID: 5)
+Observation: You activate the stopwatch (ID: 5).
+
+Current step: 19
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2)
+        an inclined plane 2 (ID: 3), with:a block (ID: 4) approximately 2.0% down the plane
+
+
+Current step: 20
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2)
+        an inclined plane 2 (ID: 3), with:a block (ID: 4) approximately 4.5% down the plane
+
+
+Current step: 21
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2)
+        an inclined plane 2 (ID: 3), with:a block (ID: 4) approximately 8.0% down the plane
+
+
+Current step: 22
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2)
+        an inclined plane 2 (ID: 3), with:a block (ID: 4) approximately 12.5% down the plane
+
+
+Current step: 23
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2)
+        an inclined plane 2 (ID: 3), with:a block (ID: 4) approximately 18.0% down the plane
+
+
+Current step: 24
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2)
+        an inclined plane 2 (ID: 3), with:a block (ID: 4) approximately 24.5% down the plane
+
+
+Current step: 25
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2)
+        an inclined plane 2 (ID: 3), with:a block (ID: 4) approximately 32.0% down the plane
+
+
+Current step: 26
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2)
+        an inclined plane 2 (ID: 3), with:a block (ID: 4) approximately 40.5% down the plane
+
+
+Current step: 27
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2)
+        an inclined plane 2 (ID: 3), with:a block (ID: 4) approximately 50.0% down the plane
+
+
+Current step: 28
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2)
+        an inclined plane 2 (ID: 3), with:a block (ID: 4) approximately 60.5% down the plane
+
+
+Current step: 29
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2)
+        an inclined plane 2 (ID: 3), with:a block (ID: 4) approximately 72.0% down the plane
+
+
+Current step: 30
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2)
+        an inclined plane 2 (ID: 3), with:a block (ID: 4) approximately 84.5% down the plane
+
+
+Current step: 31
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2)
+        an inclined plane 2 (ID: 3), with:a block (ID: 4) approximately 98.0% down the plane
+
+
+Current step: 32
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        an inclined plane 1 (ID: 2)
+        an inclined plane 2 (ID: 3), with:a block (ID: 4) approximately 100% down the plane
+
+
+Current step: 33
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> deactivate stopwatch (ID: 5)
+Observation: You deactivate the stopwatch (ID: 5).
+
+Current step: 34
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> examine stopwatch (ID: 5)
+Observation: a stopwatch (ID: 5), which is deactivated. The time reads 15 ticks.
+
+Current step: 35
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> focus on inclined plane 2 (ID: 3)
+Observation: You focus on the inclined plane 2 (ID: 3).
+
+Current step: 36
+Score: 1
+Reward: 1
+Game Over: True
+Game Won: True
+
+----------------------------------------

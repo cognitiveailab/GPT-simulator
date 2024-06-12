@@ -1,0 +1,62 @@
+Task Description: Your task is to figure out the resistance of the resistor 0.
+
+Initial Observation: You find yourself in a room.  In the room, you see:
+        yourself
+        a multimeter (ID: 2), which is in voltage mode and reads 0V
+        a resistor 0 (ID: 3)
+        a resistor 1 (ID: 4)
+        a red wire (ID: 5)
+        a black wire (ID: 6)
+        a blue wire (ID: 7)
+
+
+Type 'help' for a list of possible actions.
+
+> set multimeter (ID: 2) to resistance mode
+Observation: You set the multimeter to the resistance mode.
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> connect multimeter (ID: 2) terminal1 to resistor 0 (ID: 3) terminal1
+Observation: Successfully connect multimeter (ID: 2) terminal1 to resistor 0 (ID: 3) terminal1
+
+Current step: 2
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a room.  In the room, you see:
+        yourself
+        a multimeter (ID: 2), which is in resistance mode and reads INF ohm
+        a resistor 0 (ID: 3) connecting to multimeter (ID: 2) terminal1
+        a resistor 1 (ID: 4)
+        a red wire (ID: 5)
+        a black wire (ID: 6)
+        a blue wire (ID: 7)
+
+
+Current step: 3
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> answer 12 ohm
+Observation: You believe the resistance of the resistor 0 is 12 ohm.
+
+Current step: 4
+Score: 1
+Reward: 1
+Game Over: True
+Game Won: True
+
+----------------------------------------

@@ -1,0 +1,211 @@
+Task Description: Your task is to forge a key to open the door.
+
+Initial Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        a stove (ID: 2) that is currently off and has nothing on it.
+        a foundry (ID: 3) that is currently off and has nothing in it.
+        a copper ingot
+        a locked door (ID: 5)
+        the key mold (ID: 6) that is empty
+        the ingot mold (ID: 7) that is empty
+
+
+Type 'help' for a list of possible actions.
+
+> take copper ingot
+Observation: The copper ingot is removed from the workshop (ID: 1). You put the copper ingot in your inventory.
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put copper ingot in foundry (ID: 3)
+Observation: The copper ingot is removed from the agent (ID: 0).
+The copper ingot is placed in the foundry (ID: 3).
+
+Current step: 2
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> turn on foundry (ID: 3)
+Observation: The foundry (ID: 3) is now turned on.
+
+Current step: 3
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        a stove (ID: 2) that is currently off and has nothing on it.
+        a foundry (ID: 3) that is currently on and has the following items in it: a copper ingot
+        a locked door (ID: 5)
+        the key mold (ID: 6) that is empty
+        the ingot mold (ID: 7) that is empty
+
+
+Current step: 4
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        a stove (ID: 2) that is currently off and has nothing on it.
+        a foundry (ID: 3) that is currently on and has the following items in it: a copper ingot
+        a locked door (ID: 5)
+        the key mold (ID: 6) that is empty
+        the ingot mold (ID: 7) that is empty
+
+
+Current step: 5
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        a stove (ID: 2) that is currently off and has nothing on it.
+        a foundry (ID: 3) that is currently on and has the following items in it: a copper ingot
+        a locked door (ID: 5)
+        the key mold (ID: 6) that is empty
+        the ingot mold (ID: 7) that is empty
+
+
+Current step: 6
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        a stove (ID: 2) that is currently off and has nothing on it.
+        a foundry (ID: 3) that is currently on and has the following items in it: a copper ingot
+        a locked door (ID: 5)
+        the key mold (ID: 6) that is empty
+        the ingot mold (ID: 7) that is empty
+
+
+Current step: 7
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        a stove (ID: 2) that is currently off and has nothing on it.
+        a foundry (ID: 3) that is currently on and has the following items in it: a copper ingot
+        a locked door (ID: 5)
+        the key mold (ID: 6) that is empty
+        the ingot mold (ID: 7) that is empty
+
+
+Current step: 8
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        a stove (ID: 2) that is currently off and has nothing on it.
+        a foundry (ID: 3) that is currently on and has the following items in it: some copper (liquid)
+        a locked door (ID: 5)
+        the key mold (ID: 6) that is empty
+        the ingot mold (ID: 7) that is empty
+
+
+Current step: 9
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> pour copper (liquid) into key mold (ID: 6)
+Observation: You pour the copper (liquid) into the key mold (ID: 6).
+
+Current step: 10
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        a stove (ID: 2) that is currently off and has nothing on it.
+        a foundry (ID: 3) that is currently on and has nothing in it.
+        a locked door (ID: 5)
+        the key mold (ID: 6) that looks to have some copper (liquid) in it
+        the ingot mold (ID: 7) that is empty
+
+
+Current step: 11
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a workshop.  In the workshop, you see:
+        yourself
+        a stove (ID: 2) that is currently off and has nothing on it.
+        a foundry (ID: 3) that is currently on and has nothing in it.
+        a locked door (ID: 5)
+        the key mold (ID: 6) that looks to have a copper key in it
+        the ingot mold (ID: 7) that is empty
+
+
+Current step: 12
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take copper key
+Observation: The copper key is removed from the key mold (ID: 6). You put the copper key in your inventory.
+
+Current step: 13
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> open door (ID: 5) with copper key
+Observation: You unlock the door (ID: 5) and open it.
+
+Current step: 14
+Score: 1
+Reward: 1
+Game Over: True
+Game Won: True
+
+----------------------------------------

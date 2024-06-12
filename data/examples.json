@@ -1,0 +1,2936 @@
+{
+    "full": {
+        "action": {
+            "current_state": {
+                "observation": "The dirty cup (ID: 4) is removed from the agent (ID: 0).\nThe dirty cup (ID: 4) is placed in the dishwasher (ID: 2).",
+                "look": "You find yourself in a kitchen.  In the kitchen, you see: \n\tyourself\n\ta dishwasher (ID: 2) that is currently open and contains one or more items.\n\ta bottle of dish soap (ID: 3)\n\ta clean glass (ID: 8)\n\ta clean bowl (ID: 9)\n\ta banana (ID: 10)\n",
+                "inventory": "You have the following items in your inventory:\n\ta dirty plate (ID: 5) that looks to have half-eaten pieces of orange on it\n\ta dirty mug (ID: 6) that looks to have half-eaten pieces of sandwhich in it\n\ta dirty knife (ID: 7) that looks to have half-eaten pieces of apple (ID: 11) in it\n",
+                "taskDesc": "Your task is to wash the dirty dishes.",
+                "lastAction": "put cup (ID: 4) in dishwasher (ID: 2)",
+                "objects": [
+                    {
+                        "name": "kitchen (ID: 1)",
+                        "uuid": 1,
+                        "type": "World",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in"
+                        },
+                        "contains": [
+                            "agent (ID: 0)",
+                            "dishwasher (ID: 2)",
+                            "bottle of dish soap (ID: 3)",
+                            "glass (ID: 8)",
+                            "bowl (ID: 9)",
+                            "banana (ID: 10)"
+                        ]
+                    },
+                    {
+                        "name": "agent (ID: 0)",
+                        "uuid": 0,
+                        "type": "Agent",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in"
+                        },
+                        "contains": [
+                            "plate (ID: 5)",
+                            "mug (ID: 6)",
+                            "knife (ID: 7)"
+                        ]
+                    },
+                    {
+                        "name": "plate (ID: 5)",
+                        "uuid": 5,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "on",
+                            "dishType": "plate",
+                            "isDirty": true,
+                            "foodMessName": "orange"
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "mug (ID: 6)",
+                        "uuid": 6,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "mug",
+                            "isDirty": true,
+                            "foodMessName": "sandwhich"
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "knife (ID: 7)",
+                        "uuid": 7,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "knife",
+                            "isDirty": true,
+                            "foodMessName": "apple (ID: 11)"
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "dishwasher (ID: 2)",
+                        "uuid": 2,
+                        "type": "DishWasher",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": false,
+                            "isOpenable": true,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "isDevice": true,
+                            "isActivatable": true,
+                            "isOn": false,
+                            "cycleStage": 0,
+                            "finishedCycle": false
+                        },
+                        "contains": [
+                            "cup (ID: 4)"
+                        ]
+                    },
+                    {
+                        "name": "cup (ID: 4)",
+                        "uuid": 4,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "cup",
+                            "isDirty": true,
+                            "foodMessName": "peanut butter"
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "bottle of dish soap (ID: 3)",
+                        "uuid": 3,
+                        "type": "DishSoapBottle",
+                        "properties": {
+                            "isContainer": false,
+                            "isMoveable": true,
+                            "isDevice": true,
+                            "isActivatable": true,
+                            "isOn": false
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "glass (ID: 8)",
+                        "uuid": 8,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "glass",
+                            "isDirty": false
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "bowl (ID: 9)",
+                        "uuid": 9,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "bowl",
+                            "isDirty": false
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "banana (ID: 10)",
+                        "uuid": 10,
+                        "type": "Food",
+                        "properties": {
+                            "isContainer": false,
+                            "isMoveable": true,
+                            "isFood": true
+                        },
+                        "contains": []
+                    }
+                ],
+                "max_UUID": 12
+            },
+            "action_state": {
+                "observation": "The dirty plate (ID: 5) is removed from the agent (ID: 0).\nThe dirty plate (ID: 5) is placed in the cup (ID: 4).",
+                "look": "You find yourself in a kitchen.  In the kitchen, you see: \n\tyourself\n\ta dishwasher (ID: 2) that is currently open and contains one or more items.\n\ta bottle of dish soap (ID: 3)\n\ta clean glass (ID: 8)\n\ta clean bowl (ID: 9)\n\ta banana (ID: 10)\n",
+                "inventory": "You have the following items in your inventory:\n\ta dirty mug (ID: 6) that looks to have half-eaten pieces of sandwhich in it\n\ta dirty knife (ID: 7) that looks to have half-eaten pieces of apple (ID: 11) in it\n",
+                "taskDesc": "Your task is to wash the dirty dishes.",
+                "lastAction": "put plate (ID: 5) in dirty cup (ID: 4)",
+                "objects": [
+                    {
+                        "name": "kitchen (ID: 1)",
+                        "uuid": 1,
+                        "type": "World",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in"
+                        },
+                        "contains": [
+                            "agent (ID: 0)",
+                            "dishwasher (ID: 2)",
+                            "bottle of dish soap (ID: 3)",
+                            "glass (ID: 8)",
+                            "bowl (ID: 9)",
+                            "banana (ID: 10)"
+                        ]
+                    },
+                    {
+                        "name": "agent (ID: 0)",
+                        "uuid": 0,
+                        "type": "Agent",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in"
+                        },
+                        "contains": [
+                            "mug (ID: 6)",
+                            "knife (ID: 7)"
+                        ]
+                    },
+                    {
+                        "name": "mug (ID: 6)",
+                        "uuid": 6,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "mug",
+                            "isDirty": true,
+                            "foodMessName": "sandwhich"
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "knife (ID: 7)",
+                        "uuid": 7,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "knife",
+                            "isDirty": true,
+                            "foodMessName": "apple (ID: 11)"
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "dishwasher (ID: 2)",
+                        "uuid": 2,
+                        "type": "DishWasher",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": false,
+                            "isOpenable": true,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "isDevice": true,
+                            "isActivatable": true,
+                            "isOn": false,
+                            "cycleStage": 0,
+                            "finishedCycle": false
+                        },
+                        "contains": [
+                            "cup (ID: 4)"
+                        ]
+                    },
+                    {
+                        "name": "cup (ID: 4)",
+                        "uuid": 4,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "cup",
+                            "isDirty": true,
+                            "foodMessName": "peanut butter"
+                        },
+                        "contains": [
+                            "plate (ID: 5)"
+                        ]
+                    },
+                    {
+                        "name": "plate (ID: 5)",
+                        "uuid": 5,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "on",
+                            "dishType": "plate",
+                            "isDirty": true,
+                            "foodMessName": "orange"
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "bottle of dish soap (ID: 3)",
+                        "uuid": 3,
+                        "type": "DishSoapBottle",
+                        "properties": {
+                            "isContainer": false,
+                            "isMoveable": true,
+                            "isDevice": true,
+                            "isActivatable": true,
+                            "isOn": false
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "glass (ID: 8)",
+                        "uuid": 8,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "glass",
+                            "isDirty": false
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "bowl (ID: 9)",
+                        "uuid": 9,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "bowl",
+                            "isDirty": false
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "banana (ID: 10)",
+                        "uuid": 10,
+                        "type": "Food",
+                        "properties": {
+                            "isContainer": false,
+                            "isMoveable": true,
+                            "isFood": true
+                        },
+                        "contains": []
+                    }
+                ],
+                "max_UUID": 12
+            },
+            "tick_state": {
+                "observation": "The dirty plate (ID: 5) is removed from the agent (ID: 0).\nThe dirty plate (ID: 5) is placed in the cup (ID: 4).",
+                "look": "You find yourself in a kitchen.  In the kitchen, you see: \n\tyourself\n\ta dishwasher (ID: 2) that is currently open and contains one or more items.\n\ta bottle of dish soap (ID: 3)\n\ta clean glass (ID: 8)\n\ta clean bowl (ID: 9)\n\ta banana (ID: 10)\n",
+                "inventory": "You have the following items in your inventory:\n\ta dirty mug (ID: 6) that looks to have half-eaten pieces of sandwhich in it\n\ta dirty knife (ID: 7) that looks to have half-eaten pieces of apple (ID: 11) in it\n",
+                "taskDesc": "Your task is to wash the dirty dishes.",
+                "lastAction": "put plate (ID: 5) in dirty cup (ID: 4)",
+                "objects": [
+                    {
+                        "name": "kitchen (ID: 1)",
+                        "uuid": 1,
+                        "type": "World",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in"
+                        },
+                        "contains": [
+                            "agent (ID: 0)",
+                            "dishwasher (ID: 2)",
+                            "bottle of dish soap (ID: 3)",
+                            "glass (ID: 8)",
+                            "bowl (ID: 9)",
+                            "banana (ID: 10)"
+                        ]
+                    },
+                    {
+                        "name": "agent (ID: 0)",
+                        "uuid": 0,
+                        "type": "Agent",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in"
+                        },
+                        "contains": [
+                            "mug (ID: 6)",
+                            "knife (ID: 7)"
+                        ]
+                    },
+                    {
+                        "name": "mug (ID: 6)",
+                        "uuid": 6,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "mug",
+                            "isDirty": true,
+                            "foodMessName": "sandwhich"
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "knife (ID: 7)",
+                        "uuid": 7,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "knife",
+                            "isDirty": true,
+                            "foodMessName": "apple (ID: 11)"
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "dishwasher (ID: 2)",
+                        "uuid": 2,
+                        "type": "DishWasher",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": false,
+                            "isOpenable": true,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "isDevice": true,
+                            "isActivatable": true,
+                            "isOn": false,
+                            "cycleStage": 0,
+                            "finishedCycle": false
+                        },
+                        "contains": [
+                            "cup (ID: 4)"
+                        ]
+                    },
+                    {
+                        "name": "cup (ID: 4)",
+                        "uuid": 4,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "cup",
+                            "isDirty": true,
+                            "foodMessName": "peanut butter"
+                        },
+                        "contains": [
+                            "plate (ID: 5)"
+                        ]
+                    },
+                    {
+                        "name": "plate (ID: 5)",
+                        "uuid": 5,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "on",
+                            "dishType": "plate",
+                            "isDirty": true,
+                            "foodMessName": "orange"
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "bottle of dish soap (ID: 3)",
+                        "uuid": 3,
+                        "type": "DishSoapBottle",
+                        "properties": {
+                            "isContainer": false,
+                            "isMoveable": true,
+                            "isDevice": true,
+                            "isActivatable": true,
+                            "isOn": false
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "glass (ID: 8)",
+                        "uuid": 8,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "glass",
+                            "isDirty": false
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "bowl (ID: 9)",
+                        "uuid": 9,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "bowl",
+                            "isDirty": false
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "banana (ID: 10)",
+                        "uuid": 10,
+                        "type": "Food",
+                        "properties": {
+                            "isContainer": false,
+                            "isMoveable": true,
+                            "isFood": true
+                        },
+                        "contains": []
+                    }
+                ],
+                "max_UUID": 12
+            },
+            "current_score_state": {
+                "score": -1,
+                "gameOver": false,
+                "gameWon": false
+            },
+            "next_score_state": {
+                "score": -1,
+                "gameOver": false,
+                "gameWon": false
+            },
+            "game": "dishwasher",
+            "state_id": 8872
+        },
+        "tick": {
+            "current_state": {
+                "observation": "The dishwasher (ID: 2) is now turned on.",
+                "look": "You find yourself in a kitchen.  In the kitchen, you see: \n\tyourself\n\ta dishwasher (ID: 2) that is currently on\n\ta bottle of dish soap (ID: 3)\n\ta clean glass (ID: 8)\n\ta clean bowl (ID: 9)\n\ta banana (ID: 10)\n",
+                "inventory": "Your inventory is empty.",
+                "taskDesc": "Your task is to wash the dirty dishes.",
+                "lastAction": "turn on dishwasher (ID: 2)",
+                "objects": [
+                    {
+                        "name": "kitchen (ID: 1)",
+                        "uuid": 1,
+                        "type": "World",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in"
+                        },
+                        "contains": [
+                            "agent (ID: 0)",
+                            "dishwasher (ID: 2)",
+                            "bottle of dish soap (ID: 3)",
+                            "glass (ID: 8)",
+                            "bowl (ID: 9)",
+                            "banana (ID: 10)"
+                        ]
+                    },
+                    {
+                        "name": "agent (ID: 0)",
+                        "uuid": 0,
+                        "type": "Agent",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in"
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "dishwasher (ID: 2)",
+                        "uuid": 2,
+                        "type": "DishWasher",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": false,
+                            "isOpenable": true,
+                            "isOpen": false,
+                            "containerPrefix": "in",
+                            "isDevice": true,
+                            "isActivatable": true,
+                            "isOn": true,
+                            "cycleStage": 1,
+                            "finishedCycle": false
+                        },
+                        "contains": [
+                            "cup (ID: 4)",
+                            "plate (ID: 5)",
+                            "mug (ID: 6)",
+                            "knife (ID: 7)",
+                            "dish soap (ID: 12)"
+                        ]
+                    },
+                    {
+                        "name": "cup (ID: 4)",
+                        "uuid": 4,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "cup",
+                            "isDirty": true,
+                            "foodMessName": "peanut butter"
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "plate (ID: 5)",
+                        "uuid": 5,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "on",
+                            "dishType": "plate",
+                            "isDirty": true,
+                            "foodMessName": "orange"
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "mug (ID: 6)",
+                        "uuid": 6,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "mug",
+                            "isDirty": true,
+                            "foodMessName": "sandwhich"
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "knife (ID: 7)",
+                        "uuid": 7,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "knife",
+                            "isDirty": true,
+                            "foodMessName": "apple (ID: 11)"
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "dish soap (ID: 12)",
+                        "uuid": 12,
+                        "type": "Soap",
+                        "properties": {
+                            "isContainer": false,
+                            "isMoveable": true
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "bottle of dish soap (ID: 3)",
+                        "uuid": 3,
+                        "type": "DishSoapBottle",
+                        "properties": {
+                            "isContainer": false,
+                            "isMoveable": true,
+                            "isDevice": true,
+                            "isActivatable": true,
+                            "isOn": false
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "glass (ID: 8)",
+                        "uuid": 8,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "glass",
+                            "isDirty": false
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "bowl (ID: 9)",
+                        "uuid": 9,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "bowl",
+                            "isDirty": false
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "banana (ID: 10)",
+                        "uuid": 10,
+                        "type": "Food",
+                        "properties": {
+                            "isContainer": false,
+                            "isMoveable": true,
+                            "isFood": true
+                        },
+                        "contains": []
+                    }
+                ],
+                "max_UUID": 13
+            },
+            "action_state": {
+                "observation": "You don't currently have the dishwasher (ID: 2) in your inventory.",
+                "look": "You find yourself in a kitchen.  In the kitchen, you see: \n\tyourself\n\ta dishwasher (ID: 2) that is currently on\n\ta bottle of dish soap (ID: 3)\n\ta clean glass (ID: 8)\n\ta clean bowl (ID: 9)\n\ta banana (ID: 10)\n",
+                "inventory": "Your inventory is empty.",
+                "taskDesc": "Your task is to wash the dirty dishes.",
+                "lastAction": "eat dishwasher (ID: 2) with dirty plate (ID: 5)",
+                "objects": [
+                    {
+                        "name": "kitchen (ID: 1)",
+                        "uuid": 1,
+                        "type": "World",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in"
+                        },
+                        "contains": [
+                            "agent (ID: 0)",
+                            "dishwasher (ID: 2)",
+                            "bottle of dish soap (ID: 3)",
+                            "glass (ID: 8)",
+                            "bowl (ID: 9)",
+                            "banana (ID: 10)"
+                        ]
+                    },
+                    {
+                        "name": "agent (ID: 0)",
+                        "uuid": 0,
+                        "type": "Agent",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in"
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "dishwasher (ID: 2)",
+                        "uuid": 2,
+                        "type": "DishWasher",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": false,
+                            "isOpenable": true,
+                            "isOpen": false,
+                            "containerPrefix": "in",
+                            "isDevice": true,
+                            "isActivatable": true,
+                            "isOn": true,
+                            "cycleStage": 1,
+                            "finishedCycle": false
+                        },
+                        "contains": [
+                            "cup (ID: 4)",
+                            "plate (ID: 5)",
+                            "mug (ID: 6)",
+                            "knife (ID: 7)",
+                            "dish soap (ID: 12)"
+                        ]
+                    },
+                    {
+                        "name": "cup (ID: 4)",
+                        "uuid": 4,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "cup",
+                            "isDirty": true,
+                            "foodMessName": "peanut butter"
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "plate (ID: 5)",
+                        "uuid": 5,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "on",
+                            "dishType": "plate",
+                            "isDirty": true,
+                            "foodMessName": "orange"
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "mug (ID: 6)",
+                        "uuid": 6,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "mug",
+                            "isDirty": true,
+                            "foodMessName": "sandwhich"
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "knife (ID: 7)",
+                        "uuid": 7,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "knife",
+                            "isDirty": true,
+                            "foodMessName": "apple (ID: 11)"
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "dish soap (ID: 12)",
+                        "uuid": 12,
+                        "type": "Soap",
+                        "properties": {
+                            "isContainer": false,
+                            "isMoveable": true
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "bottle of dish soap (ID: 3)",
+                        "uuid": 3,
+                        "type": "DishSoapBottle",
+                        "properties": {
+                            "isContainer": false,
+                            "isMoveable": true,
+                            "isDevice": true,
+                            "isActivatable": true,
+                            "isOn": false
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "glass (ID: 8)",
+                        "uuid": 8,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "glass",
+                            "isDirty": false
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "bowl (ID: 9)",
+                        "uuid": 9,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "bowl",
+                            "isDirty": false
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "banana (ID: 10)",
+                        "uuid": 10,
+                        "type": "Food",
+                        "properties": {
+                            "isContainer": false,
+                            "isMoveable": true,
+                            "isFood": true
+                        },
+                        "contains": []
+                    }
+                ],
+                "max_UUID": 13
+            },
+            "tick_state": {
+                "observation": "You don't currently have the dishwasher (ID: 2) in your inventory.",
+                "look": "You find yourself in a kitchen.  In the kitchen, you see: \n\tyourself\n\ta dishwasher (ID: 2) that is currently on\n\ta bottle of dish soap (ID: 3)\n\ta clean glass (ID: 8)\n\ta clean bowl (ID: 9)\n\ta banana (ID: 10)\n",
+                "inventory": "Your inventory is empty.",
+                "taskDesc": "Your task is to wash the dirty dishes.",
+                "lastAction": "eat dishwasher (ID: 2) with dirty plate (ID: 5)",
+                "objects": [
+                    {
+                        "name": "kitchen (ID: 1)",
+                        "uuid": 1,
+                        "type": "World",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in"
+                        },
+                        "contains": [
+                            "agent (ID: 0)",
+                            "dishwasher (ID: 2)",
+                            "bottle of dish soap (ID: 3)",
+                            "glass (ID: 8)",
+                            "bowl (ID: 9)",
+                            "banana (ID: 10)"
+                        ]
+                    },
+                    {
+                        "name": "agent (ID: 0)",
+                        "uuid": 0,
+                        "type": "Agent",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in"
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "dishwasher (ID: 2)",
+                        "uuid": 2,
+                        "type": "DishWasher",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": false,
+                            "isOpenable": true,
+                            "isOpen": false,
+                            "containerPrefix": "in",
+                            "isDevice": true,
+                            "isActivatable": true,
+                            "isOn": true,
+                            "cycleStage": 2,
+                            "finishedCycle": false
+                        },
+                        "contains": [
+                            "cup (ID: 4)",
+                            "plate (ID: 5)",
+                            "mug (ID: 6)",
+                            "knife (ID: 7)"
+                        ]
+                    },
+                    {
+                        "name": "cup (ID: 4)",
+                        "uuid": 4,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "cup",
+                            "isDirty": false,
+                            "foodMessName": null
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "plate (ID: 5)",
+                        "uuid": 5,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "on",
+                            "dishType": "plate",
+                            "isDirty": false,
+                            "foodMessName": null
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "mug (ID: 6)",
+                        "uuid": 6,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "mug",
+                            "isDirty": false,
+                            "foodMessName": null
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "knife (ID: 7)",
+                        "uuid": 7,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "knife",
+                            "isDirty": false,
+                            "foodMessName": null
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "bottle of dish soap (ID: 3)",
+                        "uuid": 3,
+                        "type": "DishSoapBottle",
+                        "properties": {
+                            "isContainer": false,
+                            "isMoveable": true,
+                            "isDevice": true,
+                            "isActivatable": true,
+                            "isOn": false
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "glass (ID: 8)",
+                        "uuid": 8,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "glass",
+                            "isDirty": false
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "bowl (ID: 9)",
+                        "uuid": 9,
+                        "type": "Dish",
+                        "properties": {
+                            "isContainer": true,
+                            "isMoveable": true,
+                            "isOpenable": false,
+                            "isOpen": true,
+                            "containerPrefix": "in",
+                            "dishType": "bowl",
+                            "isDirty": false
+                        },
+                        "contains": []
+                    },
+                    {
+                        "name": "banana (ID: 10)",
+                        "uuid": 10,
+                        "type": "Food",
+                        "properties": {
+                            "isContainer": false,
+                            "isMoveable": true,
+                            "isFood": true
+                        },
+                        "contains": []
+                    }
+                ],
+                "max_UUID": 13
+            },
+            "current_score_state": {
+                "score": -1,
+                "gameOver": false,
+                "gameWon": false
+            },
+            "next_score_state": {
+                "score": 3,
+                "gameOver": true,
+                "gameWon": true
+            },
+            "game": "dishwasher",
+            "state_id": 20381
+        }
+    },
+    "tick": {
+        "current_state": {
+            "observation": "You find yourself in a kitchen.  In the kitchen, you see: \n\tyourself\n\ta dishwasher (ID: 2) that is currently on\n\ta bottle of dish soap (ID: 3)\n\ta clean glass (ID: 8)\n\ta clean bowl (ID: 9)\n\ta banana (ID: 10)\n",
+            "look": "You find yourself in a kitchen.  In the kitchen, you see: \n\tyourself\n\ta dishwasher (ID: 2) that is currently on\n\ta bottle of dish soap (ID: 3)\n\ta clean glass (ID: 8)\n\ta clean bowl (ID: 9)\n\ta banana (ID: 10)\n",
+            "inventory": "Your inventory is empty.",
+            "taskDesc": "Your task is to wash the dirty dishes.",
+            "lastAction": "look",
+            "objects": [
+                {
+                    "name": "kitchen (ID: 1)",
+                    "uuid": 1,
+                    "type": "World",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in"
+                    },
+                    "contains": [
+                        "agent (ID: 0)",
+                        "dishwasher (ID: 2)",
+                        "bottle of dish soap (ID: 3)",
+                        "glass (ID: 8)",
+                        "bowl (ID: 9)",
+                        "banana (ID: 10)"
+                    ]
+                },
+                {
+                    "name": "agent (ID: 0)",
+                    "uuid": 0,
+                    "type": "Agent",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "dishwasher (ID: 2)",
+                    "uuid": 2,
+                    "type": "DishWasher",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": false,
+                        "isOpenable": true,
+                        "isOpen": false,
+                        "containerPrefix": "in",
+                        "isDevice": true,
+                        "isActivatable": true,
+                        "isOn": true,
+                        "cycleStage": 2,
+                        "finishedCycle": false
+                    },
+                    "contains": [
+                        "cup (ID: 4)",
+                        "plate (ID: 5)",
+                        "mug (ID: 6)",
+                        "knife (ID: 7)"
+                    ]
+                },
+                {
+                    "name": "cup (ID: 4)",
+                    "uuid": 4,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "cup",
+                        "isDirty": true,
+                        "foodMessName": "peanut butter"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "plate (ID: 5)",
+                    "uuid": 5,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "on",
+                        "dishType": "plate",
+                        "isDirty": true,
+                        "foodMessName": "orange"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "mug (ID: 6)",
+                    "uuid": 6,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "mug",
+                        "isDirty": true,
+                        "foodMessName": "sandwhich"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "knife (ID: 7)",
+                    "uuid": 7,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "knife",
+                        "isDirty": true,
+                        "foodMessName": "apple (ID: 11)"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "bottle of dish soap (ID: 3)",
+                    "uuid": 3,
+                    "type": "DishSoapBottle",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true,
+                        "isDevice": true,
+                        "isActivatable": true,
+                        "isOn": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "glass (ID: 8)",
+                    "uuid": 8,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "glass",
+                        "isDirty": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "bowl (ID: 9)",
+                    "uuid": 9,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "bowl",
+                        "isDirty": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "banana (ID: 10)",
+                    "uuid": 10,
+                    "type": "Food",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true,
+                        "isFood": true
+                    },
+                    "contains": []
+                }
+            ],
+            "max_UUID": 12
+        },
+        "action_state": {
+            "observation": "You squirt some dish soap on the dirty cup (ID: 4).",
+            "look": "You find yourself in a kitchen.  In the kitchen, you see: \n\tyourself\n\ta dishwasher (ID: 2) that is currently on\n\ta bottle of dish soap (ID: 3)\n\ta clean glass (ID: 8)\n\ta clean bowl (ID: 9)\n\ta banana (ID: 10)\n",
+            "inventory": "Your inventory is empty.",
+            "taskDesc": "Your task is to wash the dirty dishes.",
+            "lastAction": "use bottle of dish soap (ID: 3) on cup (ID: 4)",
+            "objects": [
+                {
+                    "name": "kitchen (ID: 1)",
+                    "uuid": 1,
+                    "type": "World",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in"
+                    },
+                    "contains": [
+                        "agent (ID: 0)",
+                        "dishwasher (ID: 2)",
+                        "bottle of dish soap (ID: 3)",
+                        "glass (ID: 8)",
+                        "bowl (ID: 9)",
+                        "banana (ID: 10)"
+                    ]
+                },
+                {
+                    "name": "agent (ID: 0)",
+                    "uuid": 0,
+                    "type": "Agent",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "dishwasher (ID: 2)",
+                    "uuid": 2,
+                    "type": "DishWasher",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": false,
+                        "isOpenable": true,
+                        "isOpen": false,
+                        "containerPrefix": "in",
+                        "isDevice": true,
+                        "isActivatable": true,
+                        "isOn": true,
+                        "cycleStage": 2,
+                        "finishedCycle": false
+                    },
+                    "contains": [
+                        "cup (ID: 4)",
+                        "plate (ID: 5)",
+                        "mug (ID: 6)",
+                        "knife (ID: 7)"
+                    ]
+                },
+                {
+                    "name": "cup (ID: 4)",
+                    "uuid": 4,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "cup",
+                        "isDirty": true,
+                        "foodMessName": "peanut butter"
+                    },
+                    "contains": [
+                        "dish soap (ID: 12)"
+                    ]
+                },
+                {
+                    "name": "dish soap (ID: 12)",
+                    "uuid": 12,
+                    "type": "Soap",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "plate (ID: 5)",
+                    "uuid": 5,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "on",
+                        "dishType": "plate",
+                        "isDirty": true,
+                        "foodMessName": "orange"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "mug (ID: 6)",
+                    "uuid": 6,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "mug",
+                        "isDirty": true,
+                        "foodMessName": "sandwhich"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "knife (ID: 7)",
+                    "uuid": 7,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "knife",
+                        "isDirty": true,
+                        "foodMessName": "apple (ID: 11)"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "bottle of dish soap (ID: 3)",
+                    "uuid": 3,
+                    "type": "DishSoapBottle",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true,
+                        "isDevice": true,
+                        "isActivatable": true,
+                        "isOn": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "glass (ID: 8)",
+                    "uuid": 8,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "glass",
+                        "isDirty": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "bowl (ID: 9)",
+                    "uuid": 9,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "bowl",
+                        "isDirty": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "banana (ID: 10)",
+                    "uuid": 10,
+                    "type": "Food",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true,
+                        "isFood": true
+                    },
+                    "contains": []
+                }
+            ],
+            "max_UUID": 13
+        },
+        "tick_state": {
+            "observation": "You squirt some dish soap on the dirty cup (ID: 4).",
+            "look": "You find yourself in a kitchen.  In the kitchen, you see: \n\tyourself\n\ta dishwasher (ID: 2) with a blinking green light that is currently closed\n\ta bottle of dish soap (ID: 3)\n\ta clean glass (ID: 8)\n\ta clean bowl (ID: 9)\n\ta banana (ID: 10)\n",
+            "inventory": "Your inventory is empty.",
+            "taskDesc": "Your task is to wash the dirty dishes.",
+            "lastAction": "use bottle of dish soap (ID: 3) on cup (ID: 4)",
+            "objects": [
+                {
+                    "name": "kitchen (ID: 1)",
+                    "uuid": 1,
+                    "type": "World",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in"
+                    },
+                    "contains": [
+                        "agent (ID: 0)",
+                        "dishwasher (ID: 2)",
+                        "bottle of dish soap (ID: 3)",
+                        "glass (ID: 8)",
+                        "bowl (ID: 9)",
+                        "banana (ID: 10)"
+                    ]
+                },
+                {
+                    "name": "agent (ID: 0)",
+                    "uuid": 0,
+                    "type": "Agent",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "dishwasher (ID: 2)",
+                    "uuid": 2,
+                    "type": "DishWasher",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": false,
+                        "isOpenable": true,
+                        "isOpen": false,
+                        "containerPrefix": "in",
+                        "isDevice": true,
+                        "isActivatable": true,
+                        "isOn": false,
+                        "cycleStage": 0,
+                        "finishedCycle": true
+                    },
+                    "contains": [
+                        "cup (ID: 4)",
+                        "plate (ID: 5)",
+                        "mug (ID: 6)",
+                        "knife (ID: 7)"
+                    ]
+                },
+                {
+                    "name": "cup (ID: 4)",
+                    "uuid": 4,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "cup",
+                        "isDirty": true,
+                        "foodMessName": "peanut butter"
+                    },
+                    "contains": [
+                        "dish soap (ID: 12)"
+                    ]
+                },
+                {
+                    "name": "dish soap (ID: 12)",
+                    "uuid": 12,
+                    "type": "Soap",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "plate (ID: 5)",
+                    "uuid": 5,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "on",
+                        "dishType": "plate",
+                        "isDirty": true,
+                        "foodMessName": "orange"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "mug (ID: 6)",
+                    "uuid": 6,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "mug",
+                        "isDirty": true,
+                        "foodMessName": "sandwhich"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "knife (ID: 7)",
+                    "uuid": 7,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "knife",
+                        "isDirty": true,
+                        "foodMessName": "apple (ID: 11)"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "bottle of dish soap (ID: 3)",
+                    "uuid": 3,
+                    "type": "DishSoapBottle",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true,
+                        "isDevice": true,
+                        "isActivatable": true,
+                        "isOn": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "glass (ID: 8)",
+                    "uuid": 8,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "glass",
+                        "isDirty": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "bowl (ID: 9)",
+                    "uuid": 9,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "bowl",
+                        "isDirty": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "banana (ID: 10)",
+                    "uuid": 10,
+                    "type": "Food",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true,
+                        "isFood": true
+                    },
+                    "contains": []
+                }
+            ],
+            "max_UUID": 13
+        },
+        "current_score_state": {
+            "score": -1,
+            "gameOver": false,
+            "gameWon": false
+        },
+        "next_score_state": {
+            "score": -1,
+            "gameOver": false,
+            "gameWon": false
+        },
+        "game": "dishwasher",
+        "state_id": 15818
+    },
+    "score": {
+        "current_state": {
+            "observation": "The dishwasher (ID: 2) is now turned on.",
+            "look": "You find yourself in a kitchen.  In the kitchen, you see: \n\tyourself\n\ta dishwasher (ID: 2) that is currently on\n\ta bottle of dish soap (ID: 3)\n\ta clean glass (ID: 8)\n\ta clean bowl (ID: 9)\n\ta banana (ID: 10)\n",
+            "inventory": "Your inventory is empty.",
+            "taskDesc": "Your task is to wash the dirty dishes.",
+            "lastAction": "turn on dishwasher (ID: 2)",
+            "objects": [
+                {
+                    "name": "kitchen (ID: 1)",
+                    "uuid": 1,
+                    "type": "World",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in"
+                    },
+                    "contains": [
+                        "agent (ID: 0)",
+                        "dishwasher (ID: 2)",
+                        "bottle of dish soap (ID: 3)",
+                        "glass (ID: 8)",
+                        "bowl (ID: 9)",
+                        "banana (ID: 10)"
+                    ]
+                },
+                {
+                    "name": "agent (ID: 0)",
+                    "uuid": 0,
+                    "type": "Agent",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "dishwasher (ID: 2)",
+                    "uuid": 2,
+                    "type": "DishWasher",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": false,
+                        "isOpenable": true,
+                        "isOpen": false,
+                        "containerPrefix": "in",
+                        "isDevice": true,
+                        "isActivatable": true,
+                        "isOn": true,
+                        "cycleStage": 1,
+                        "finishedCycle": false
+                    },
+                    "contains": [
+                        "cup (ID: 4)",
+                        "plate (ID: 5)",
+                        "mug (ID: 6)",
+                        "knife (ID: 7)",
+                        "dish soap (ID: 12)"
+                    ]
+                },
+                {
+                    "name": "cup (ID: 4)",
+                    "uuid": 4,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "cup",
+                        "isDirty": true,
+                        "foodMessName": "peanut butter"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "plate (ID: 5)",
+                    "uuid": 5,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "on",
+                        "dishType": "plate",
+                        "isDirty": true,
+                        "foodMessName": "orange"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "mug (ID: 6)",
+                    "uuid": 6,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "mug",
+                        "isDirty": true,
+                        "foodMessName": "sandwhich"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "knife (ID: 7)",
+                    "uuid": 7,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "knife",
+                        "isDirty": true,
+                        "foodMessName": "apple (ID: 11)"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "dish soap (ID: 12)",
+                    "uuid": 12,
+                    "type": "Soap",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "bottle of dish soap (ID: 3)",
+                    "uuid": 3,
+                    "type": "DishSoapBottle",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true,
+                        "isDevice": true,
+                        "isActivatable": true,
+                        "isOn": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "glass (ID: 8)",
+                    "uuid": 8,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "glass",
+                        "isDirty": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "bowl (ID: 9)",
+                    "uuid": 9,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "bowl",
+                        "isDirty": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "banana (ID: 10)",
+                    "uuid": 10,
+                    "type": "Food",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true,
+                        "isFood": true
+                    },
+                    "contains": []
+                }
+            ],
+            "max_UUID": 13
+        },
+        "action_state": {
+            "observation": "You squirt some dish soap on the clean bowl (ID: 9).",
+            "look": "You find yourself in a kitchen.  In the kitchen, you see: \n\tyourself\n\ta dishwasher (ID: 2) that is currently on\n\ta bottle of dish soap (ID: 3)\n\ta clean glass (ID: 8)\n\ta clean bowl (ID: 9) that looks to have a squirt of dish soap (ID: 13) in it\n\ta banana (ID: 10)\n",
+            "inventory": "Your inventory is empty.",
+            "taskDesc": "Your task is to wash the dirty dishes.",
+            "lastAction": "use bottle of dish soap (ID: 3) on bowl (ID: 9)",
+            "objects": [
+                {
+                    "name": "kitchen (ID: 1)",
+                    "uuid": 1,
+                    "type": "World",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in"
+                    },
+                    "contains": [
+                        "agent (ID: 0)",
+                        "dishwasher (ID: 2)",
+                        "bottle of dish soap (ID: 3)",
+                        "glass (ID: 8)",
+                        "bowl (ID: 9)",
+                        "banana (ID: 10)"
+                    ]
+                },
+                {
+                    "name": "agent (ID: 0)",
+                    "uuid": 0,
+                    "type": "Agent",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "dishwasher (ID: 2)",
+                    "uuid": 2,
+                    "type": "DishWasher",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": false,
+                        "isOpenable": true,
+                        "isOpen": false,
+                        "containerPrefix": "in",
+                        "isDevice": true,
+                        "isActivatable": true,
+                        "isOn": true,
+                        "cycleStage": 1,
+                        "finishedCycle": false
+                    },
+                    "contains": [
+                        "cup (ID: 4)",
+                        "plate (ID: 5)",
+                        "mug (ID: 6)",
+                        "knife (ID: 7)",
+                        "dish soap (ID: 12)"
+                    ]
+                },
+                {
+                    "name": "cup (ID: 4)",
+                    "uuid": 4,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "cup",
+                        "isDirty": true,
+                        "foodMessName": "peanut butter"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "plate (ID: 5)",
+                    "uuid": 5,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "on",
+                        "dishType": "plate",
+                        "isDirty": true,
+                        "foodMessName": "orange"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "mug (ID: 6)",
+                    "uuid": 6,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "mug",
+                        "isDirty": true,
+                        "foodMessName": "sandwhich"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "knife (ID: 7)",
+                    "uuid": 7,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "knife",
+                        "isDirty": true,
+                        "foodMessName": "apple (ID: 11)"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "dish soap (ID: 12)",
+                    "uuid": 12,
+                    "type": "Soap",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "bottle of dish soap (ID: 3)",
+                    "uuid": 3,
+                    "type": "DishSoapBottle",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true,
+                        "isDevice": true,
+                        "isActivatable": true,
+                        "isOn": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "glass (ID: 8)",
+                    "uuid": 8,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "glass",
+                        "isDirty": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "bowl (ID: 9)",
+                    "uuid": 9,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "bowl",
+                        "isDirty": false
+                    },
+                    "contains": [
+                        "dish soap (ID: 13)"
+                    ]
+                },
+                {
+                    "name": "dish soap (ID: 13)",
+                    "uuid": 13,
+                    "type": "Soap",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "banana (ID: 10)",
+                    "uuid": 10,
+                    "type": "Food",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true,
+                        "isFood": true
+                    },
+                    "contains": []
+                }
+            ],
+            "max_UUID": 14
+        },
+        "tick_state": {
+            "observation": "You squirt some dish soap on the clean bowl (ID: 9).",
+            "look": "You find yourself in a kitchen.  In the kitchen, you see: \n\tyourself\n\ta dishwasher (ID: 2) that is currently on\n\ta bottle of dish soap (ID: 3)\n\ta clean glass (ID: 8)\n\ta clean bowl (ID: 9) that looks to have a squirt of dish soap (ID: 13) in it\n\ta banana (ID: 10)\n",
+            "inventory": "Your inventory is empty.",
+            "taskDesc": "Your task is to wash the dirty dishes.",
+            "lastAction": "use bottle of dish soap (ID: 3) on bowl (ID: 9)",
+            "objects": [
+                {
+                    "name": "kitchen (ID: 1)",
+                    "uuid": 1,
+                    "type": "World",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in"
+                    },
+                    "contains": [
+                        "agent (ID: 0)",
+                        "dishwasher (ID: 2)",
+                        "bottle of dish soap (ID: 3)",
+                        "glass (ID: 8)",
+                        "bowl (ID: 9)",
+                        "banana (ID: 10)"
+                    ]
+                },
+                {
+                    "name": "agent (ID: 0)",
+                    "uuid": 0,
+                    "type": "Agent",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "dishwasher (ID: 2)",
+                    "uuid": 2,
+                    "type": "DishWasher",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": false,
+                        "isOpenable": true,
+                        "isOpen": false,
+                        "containerPrefix": "in",
+                        "isDevice": true,
+                        "isActivatable": true,
+                        "isOn": true,
+                        "cycleStage": 2,
+                        "finishedCycle": false
+                    },
+                    "contains": [
+                        "cup (ID: 4)",
+                        "plate (ID: 5)",
+                        "mug (ID: 6)",
+                        "knife (ID: 7)"
+                    ]
+                },
+                {
+                    "name": "cup (ID: 4)",
+                    "uuid": 4,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "cup",
+                        "isDirty": false,
+                        "foodMessName": null
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "plate (ID: 5)",
+                    "uuid": 5,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "on",
+                        "dishType": "plate",
+                        "isDirty": false,
+                        "foodMessName": null
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "mug (ID: 6)",
+                    "uuid": 6,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "mug",
+                        "isDirty": false,
+                        "foodMessName": null
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "knife (ID: 7)",
+                    "uuid": 7,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "knife",
+                        "isDirty": false,
+                        "foodMessName": null
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "bottle of dish soap (ID: 3)",
+                    "uuid": 3,
+                    "type": "DishSoapBottle",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true,
+                        "isDevice": true,
+                        "isActivatable": true,
+                        "isOn": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "glass (ID: 8)",
+                    "uuid": 8,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "glass",
+                        "isDirty": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "bowl (ID: 9)",
+                    "uuid": 9,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "bowl",
+                        "isDirty": false
+                    },
+                    "contains": [
+                        "dish soap (ID: 13)"
+                    ]
+                },
+                {
+                    "name": "dish soap (ID: 13)",
+                    "uuid": 13,
+                    "type": "Soap",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "banana (ID: 10)",
+                    "uuid": 10,
+                    "type": "Food",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true,
+                        "isFood": true
+                    },
+                    "contains": []
+                }
+            ],
+            "max_UUID": 14
+        },
+        "current_score_state": {
+            "score": -1,
+            "gameOver": false,
+            "gameWon": false
+        },
+        "next_score_state": {
+            "score": 3,
+            "gameOver": true,
+            "gameWon": true
+        },
+        "game": "dishwasher",
+        "state_id": 21091
+    },
+    "action": {
+        "current_state": {
+            "observation": "The dirty cup (ID: 4) is removed from the agent (ID: 0).\nThe dirty cup (ID: 4) is placed in the dishwasher (ID: 2).",
+            "look": "You find yourself in a kitchen.  In the kitchen, you see: \n\tyourself\n\ta dishwasher (ID: 2) that is currently open and contains one or more items.\n\ta bottle of dish soap (ID: 3)\n\ta clean glass (ID: 8)\n\ta clean bowl (ID: 9)\n\ta banana (ID: 10)\n",
+            "inventory": "You have the following items in your inventory:\n\ta dirty plate (ID: 5) that looks to have half-eaten pieces of orange on it\n\ta dirty mug (ID: 6) that looks to have half-eaten pieces of sandwhich in it\n\ta dirty knife (ID: 7) that looks to have half-eaten pieces of apple (ID: 11) in it\n",
+            "taskDesc": "Your task is to wash the dirty dishes.",
+            "lastAction": "put cup (ID: 4) in dishwasher (ID: 2)",
+            "objects": [
+                {
+                    "name": "kitchen (ID: 1)",
+                    "uuid": 1,
+                    "type": "World",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in"
+                    },
+                    "contains": [
+                        "agent (ID: 0)",
+                        "dishwasher (ID: 2)",
+                        "bottle of dish soap (ID: 3)",
+                        "glass (ID: 8)",
+                        "bowl (ID: 9)",
+                        "banana (ID: 10)"
+                    ]
+                },
+                {
+                    "name": "agent (ID: 0)",
+                    "uuid": 0,
+                    "type": "Agent",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in"
+                    },
+                    "contains": [
+                        "plate (ID: 5)",
+                        "mug (ID: 6)",
+                        "knife (ID: 7)"
+                    ]
+                },
+                {
+                    "name": "plate (ID: 5)",
+                    "uuid": 5,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "on",
+                        "dishType": "plate",
+                        "isDirty": true,
+                        "foodMessName": "orange"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "mug (ID: 6)",
+                    "uuid": 6,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "mug",
+                        "isDirty": true,
+                        "foodMessName": "sandwhich"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "knife (ID: 7)",
+                    "uuid": 7,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "knife",
+                        "isDirty": true,
+                        "foodMessName": "apple (ID: 11)"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "dishwasher (ID: 2)",
+                    "uuid": 2,
+                    "type": "DishWasher",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": false,
+                        "isOpenable": true,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "isDevice": true,
+                        "isActivatable": true,
+                        "isOn": false,
+                        "cycleStage": 0,
+                        "finishedCycle": false
+                    },
+                    "contains": [
+                        "cup (ID: 4)"
+                    ]
+                },
+                {
+                    "name": "cup (ID: 4)",
+                    "uuid": 4,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "cup",
+                        "isDirty": true,
+                        "foodMessName": "peanut butter"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "bottle of dish soap (ID: 3)",
+                    "uuid": 3,
+                    "type": "DishSoapBottle",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true,
+                        "isDevice": true,
+                        "isActivatable": true,
+                        "isOn": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "glass (ID: 8)",
+                    "uuid": 8,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "glass",
+                        "isDirty": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "bowl (ID: 9)",
+                    "uuid": 9,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "bowl",
+                        "isDirty": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "banana (ID: 10)",
+                    "uuid": 10,
+                    "type": "Food",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true,
+                        "isFood": true
+                    },
+                    "contains": []
+                }
+            ],
+            "max_UUID": 12
+        },
+        "action_state": {
+            "observation": "The dirty plate (ID: 5) is removed from the agent (ID: 0).\nThe dirty plate (ID: 5) is placed in the cup (ID: 4).",
+            "look": "You find yourself in a kitchen.  In the kitchen, you see: \n\tyourself\n\ta dishwasher (ID: 2) that is currently open and contains one or more items.\n\ta bottle of dish soap (ID: 3)\n\ta clean glass (ID: 8)\n\ta clean bowl (ID: 9)\n\ta banana (ID: 10)\n",
+            "inventory": "You have the following items in your inventory:\n\ta dirty mug (ID: 6) that looks to have half-eaten pieces of sandwhich in it\n\ta dirty knife (ID: 7) that looks to have half-eaten pieces of apple (ID: 11) in it\n",
+            "taskDesc": "Your task is to wash the dirty dishes.",
+            "lastAction": "put plate (ID: 5) in dirty cup (ID: 4)",
+            "objects": [
+                {
+                    "name": "kitchen (ID: 1)",
+                    "uuid": 1,
+                    "type": "World",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in"
+                    },
+                    "contains": [
+                        "agent (ID: 0)",
+                        "dishwasher (ID: 2)",
+                        "bottle of dish soap (ID: 3)",
+                        "glass (ID: 8)",
+                        "bowl (ID: 9)",
+                        "banana (ID: 10)"
+                    ]
+                },
+                {
+                    "name": "agent (ID: 0)",
+                    "uuid": 0,
+                    "type": "Agent",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in"
+                    },
+                    "contains": [
+                        "mug (ID: 6)",
+                        "knife (ID: 7)"
+                    ]
+                },
+                {
+                    "name": "mug (ID: 6)",
+                    "uuid": 6,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "mug",
+                        "isDirty": true,
+                        "foodMessName": "sandwhich"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "knife (ID: 7)",
+                    "uuid": 7,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "knife",
+                        "isDirty": true,
+                        "foodMessName": "apple (ID: 11)"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "dishwasher (ID: 2)",
+                    "uuid": 2,
+                    "type": "DishWasher",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": false,
+                        "isOpenable": true,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "isDevice": true,
+                        "isActivatable": true,
+                        "isOn": false,
+                        "cycleStage": 0,
+                        "finishedCycle": false
+                    },
+                    "contains": [
+                        "cup (ID: 4)"
+                    ]
+                },
+                {
+                    "name": "cup (ID: 4)",
+                    "uuid": 4,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "cup",
+                        "isDirty": true,
+                        "foodMessName": "peanut butter"
+                    },
+                    "contains": [
+                        "plate (ID: 5)"
+                    ]
+                },
+                {
+                    "name": "plate (ID: 5)",
+                    "uuid": 5,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "on",
+                        "dishType": "plate",
+                        "isDirty": true,
+                        "foodMessName": "orange"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "bottle of dish soap (ID: 3)",
+                    "uuid": 3,
+                    "type": "DishSoapBottle",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true,
+                        "isDevice": true,
+                        "isActivatable": true,
+                        "isOn": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "glass (ID: 8)",
+                    "uuid": 8,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "glass",
+                        "isDirty": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "bowl (ID: 9)",
+                    "uuid": 9,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "bowl",
+                        "isDirty": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "banana (ID: 10)",
+                    "uuid": 10,
+                    "type": "Food",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true,
+                        "isFood": true
+                    },
+                    "contains": []
+                }
+            ],
+            "max_UUID": 12
+        },
+        "tick_state": {
+            "observation": "The dirty plate (ID: 5) is removed from the agent (ID: 0).\nThe dirty plate (ID: 5) is placed in the cup (ID: 4).",
+            "look": "You find yourself in a kitchen.  In the kitchen, you see: \n\tyourself\n\ta dishwasher (ID: 2) that is currently open and contains one or more items.\n\ta bottle of dish soap (ID: 3)\n\ta clean glass (ID: 8)\n\ta clean bowl (ID: 9)\n\ta banana (ID: 10)\n",
+            "inventory": "You have the following items in your inventory:\n\ta dirty mug (ID: 6) that looks to have half-eaten pieces of sandwhich in it\n\ta dirty knife (ID: 7) that looks to have half-eaten pieces of apple (ID: 11) in it\n",
+            "taskDesc": "Your task is to wash the dirty dishes.",
+            "lastAction": "put plate (ID: 5) in dirty cup (ID: 4)",
+            "objects": [
+                {
+                    "name": "kitchen (ID: 1)",
+                    "uuid": 1,
+                    "type": "World",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in"
+                    },
+                    "contains": [
+                        "agent (ID: 0)",
+                        "dishwasher (ID: 2)",
+                        "bottle of dish soap (ID: 3)",
+                        "glass (ID: 8)",
+                        "bowl (ID: 9)",
+                        "banana (ID: 10)"
+                    ]
+                },
+                {
+                    "name": "agent (ID: 0)",
+                    "uuid": 0,
+                    "type": "Agent",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in"
+                    },
+                    "contains": [
+                        "mug (ID: 6)",
+                        "knife (ID: 7)"
+                    ]
+                },
+                {
+                    "name": "mug (ID: 6)",
+                    "uuid": 6,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "mug",
+                        "isDirty": true,
+                        "foodMessName": "sandwhich"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "knife (ID: 7)",
+                    "uuid": 7,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "knife",
+                        "isDirty": true,
+                        "foodMessName": "apple (ID: 11)"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "dishwasher (ID: 2)",
+                    "uuid": 2,
+                    "type": "DishWasher",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": false,
+                        "isOpenable": true,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "isDevice": true,
+                        "isActivatable": true,
+                        "isOn": false,
+                        "cycleStage": 0,
+                        "finishedCycle": false
+                    },
+                    "contains": [
+                        "cup (ID: 4)"
+                    ]
+                },
+                {
+                    "name": "cup (ID: 4)",
+                    "uuid": 4,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "cup",
+                        "isDirty": true,
+                        "foodMessName": "peanut butter"
+                    },
+                    "contains": [
+                        "plate (ID: 5)"
+                    ]
+                },
+                {
+                    "name": "plate (ID: 5)",
+                    "uuid": 5,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "on",
+                        "dishType": "plate",
+                        "isDirty": true,
+                        "foodMessName": "orange"
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "bottle of dish soap (ID: 3)",
+                    "uuid": 3,
+                    "type": "DishSoapBottle",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true,
+                        "isDevice": true,
+                        "isActivatable": true,
+                        "isOn": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "glass (ID: 8)",
+                    "uuid": 8,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "glass",
+                        "isDirty": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "bowl (ID: 9)",
+                    "uuid": 9,
+                    "type": "Dish",
+                    "properties": {
+                        "isContainer": true,
+                        "isMoveable": true,
+                        "isOpenable": false,
+                        "isOpen": true,
+                        "containerPrefix": "in",
+                        "dishType": "bowl",
+                        "isDirty": false
+                    },
+                    "contains": []
+                },
+                {
+                    "name": "banana (ID: 10)",
+                    "uuid": 10,
+                    "type": "Food",
+                    "properties": {
+                        "isContainer": false,
+                        "isMoveable": true,
+                        "isFood": true
+                    },
+                    "contains": []
+                }
+            ],
+            "max_UUID": 12
+        },
+        "current_score_state": {
+            "score": -1,
+            "gameOver": false,
+            "gameWon": false
+        },
+        "next_score_state": {
+            "score": -1,
+            "gameOver": false,
+            "gameWon": false
+        },
+        "game": "dishwasher",
+        "state_id": 8872
+    }
+}

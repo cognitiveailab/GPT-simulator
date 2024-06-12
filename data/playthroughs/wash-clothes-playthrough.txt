@@ -1,0 +1,520 @@
+Task Description: Your task is to wash the dirty clothes and dry them.
+
+Initial Observation: You find yourself in a room.  In the room, you see:
+        yourself
+        a washing machine (ID: 2) that is currently closed
+        a dryer (ID: 3) that is currently closed
+        a bottle of detergent (ID: 4)
+        a dirty dry skirt (ID: 5)
+        a dirty dry jacket (ID: 6)
+        a dirty dry coat (ID: 7)
+        a dirty dry shirt (ID: 8)
+        a clean dry vest (ID: 9)
+        a clean dry dress (ID: 10)
+        a clean dry sweater (ID: 11)
+        a basket (ID: 12)
+
+
+Type 'help' for a list of possible actions.
+
+> open washing machine (ID: 2)
+Observation: The washing machine (ID: 2) is now open.
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take skirt (ID: 5)
+Observation: The skirt (ID: 5) is removed from the room (ID: 1). You put the skirt (ID: 5) in your inventory.
+
+Current step: 2
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put skirt (ID: 5) in washing machine (ID: 2)
+Observation: The skirt (ID: 5) is removed from the agent (ID: 0).
+The skirt (ID: 5) is placed in the washing machine (ID: 2).
+
+Current step: 3
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take jacket (ID: 6)
+Observation: The jacket (ID: 6) is removed from the room (ID: 1). You put the jacket (ID: 6) in your inventory.
+
+Current step: 4
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put jacket (ID: 6) in washing machine (ID: 2)
+Observation: The jacket (ID: 6) is removed from the agent (ID: 0).
+The jacket (ID: 6) is placed in the washing machine (ID: 2).
+
+Current step: 5
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take coat (ID: 7)
+Observation: The coat (ID: 7) is removed from the room (ID: 1). You put the coat (ID: 7) in your inventory.
+
+Current step: 6
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put coat (ID: 7) in washing machine (ID: 2)
+Observation: The coat (ID: 7) is removed from the agent (ID: 0).
+The coat (ID: 7) is placed in the washing machine (ID: 2).
+
+Current step: 7
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take shirt (ID: 8)
+Observation: The shirt (ID: 8) is removed from the room (ID: 1). You put the shirt (ID: 8) in your inventory.
+
+Current step: 8
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put shirt (ID: 8) in washing machine (ID: 2)
+Observation: The shirt (ID: 8) is removed from the agent (ID: 0).
+The shirt (ID: 8) is placed in the washing machine (ID: 2).
+
+Current step: 9
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> use bottle of detergent (ID: 4) on washing machine (ID: 2)
+Observation: You add some detergent into the washing machine.
+
+Current step: 10
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> close washing machine (ID: 2)
+Observation: The washing machine (ID: 2) is now closed.
+
+Current step: 11
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> turn on washing machine (ID: 2)
+Observation: The washing machine (ID: 2) is now turned on.
+
+Current step: 12
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> wait
+Observation: You wait.
+
+Current step: 13
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a room.  In the room, you see:
+        yourself
+        a washing machine (ID: 2) that is currently on
+        a dryer (ID: 3) that is currently closed
+        a bottle of detergent (ID: 4)
+        a clean dry vest (ID: 9)
+        a clean dry dress (ID: 10)
+        a clean dry sweater (ID: 11)
+        a basket (ID: 12)
+
+
+Current step: 14
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a room.  In the room, you see:
+        yourself
+        a washing machine (ID: 2) with a blinking green light that is currently closed
+        a dryer (ID: 3) that is currently closed
+        a bottle of detergent (ID: 4)
+        a clean dry vest (ID: 9)
+        a clean dry dress (ID: 10)
+        a clean dry sweater (ID: 11)
+        a basket (ID: 12)
+
+
+Current step: 15
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> open washing machine (ID: 2)
+Observation: The washing machine (ID: 2) is now open.
+
+Current step: 16
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> open dryer (ID: 3)
+Observation: The dryer (ID: 3) is now open.
+
+Current step: 17
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take skirt (ID: 5)
+Observation: The skirt (ID: 5) is removed from the washing machine (ID: 2). You put the skirt (ID: 5) in your inventory.
+
+Current step: 18
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put skirt (ID: 5) in dryer (ID: 3)
+Observation: The skirt (ID: 5) is removed from the agent (ID: 0).
+The skirt (ID: 5) is placed in the dryer (ID: 3).
+
+Current step: 19
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take jacket (ID: 6)
+Observation: The jacket (ID: 6) is removed from the washing machine (ID: 2). You put the jacket (ID: 6) in your inventory.
+
+Current step: 20
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put jacket (ID: 6) in dryer (ID: 3)
+Observation: The jacket (ID: 6) is removed from the agent (ID: 0).
+The jacket (ID: 6) is placed in the dryer (ID: 3).
+
+Current step: 21
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take coat (ID: 7)
+Observation: The coat (ID: 7) is removed from the washing machine (ID: 2). You put the coat (ID: 7) in your inventory.
+
+Current step: 22
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put coat (ID: 7) in dryer (ID: 3)
+Observation: The coat (ID: 7) is removed from the agent (ID: 0).
+The coat (ID: 7) is placed in the dryer (ID: 3).
+
+Current step: 23
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take shirt (ID: 8)
+Observation: The shirt (ID: 8) is removed from the washing machine (ID: 2). You put the shirt (ID: 8) in your inventory.
+
+Current step: 24
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put shirt (ID: 8) in dryer (ID: 3)
+Observation: The shirt (ID: 8) is removed from the agent (ID: 0).
+The shirt (ID: 8) is placed in the dryer (ID: 3).
+
+Current step: 25
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> close dryer (ID: 3)
+Observation: The dryer (ID: 3) is now closed.
+
+Current step: 26
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> turn on dryer (ID: 3)
+Observation: The dryer (ID: 3) is now turned on.
+
+Current step: 27
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> wait
+Observation: You wait.
+
+Current step: 28
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a room.  In the room, you see:
+        yourself
+        a washing machine (ID: 2) that is currently open and empty
+        a dryer (ID: 3) that is currently on
+        a bottle of detergent (ID: 4)
+        a clean dry vest (ID: 9)
+        a clean dry dress (ID: 10)
+        a clean dry sweater (ID: 11)
+        a basket (ID: 12)
+
+
+Current step: 29
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a room.  In the room, you see:
+        yourself
+        a washing machine (ID: 2) that is currently open and empty
+        a dryer (ID: 3) with a blinking green light that is currently closed
+        a bottle of detergent (ID: 4)
+        a clean dry vest (ID: 9)
+        a clean dry dress (ID: 10)
+        a clean dry sweater (ID: 11)
+        a basket (ID: 12)
+
+
+Current step: 30
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> open dryer (ID: 3)
+Observation: The dryer (ID: 3) is now open.
+
+Current step: 31
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take skirt (ID: 5)
+Observation: The skirt (ID: 5) is removed from the dryer (ID: 3). You put the skirt (ID: 5) in your inventory.
+
+Current step: 32
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put skirt (ID: 5) in basket (ID: 12)
+Observation: The skirt (ID: 5) is removed from the agent (ID: 0).
+The skirt (ID: 5) is placed in the basket (ID: 12).
+
+Current step: 33
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take jacket (ID: 6)
+Observation: The jacket (ID: 6) is removed from the dryer (ID: 3). You put the jacket (ID: 6) in your inventory.
+
+Current step: 34
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put jacket (ID: 6) in basket (ID: 12)
+Observation: The jacket (ID: 6) is removed from the agent (ID: 0).
+The jacket (ID: 6) is placed in the basket (ID: 12).
+
+Current step: 35
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take coat (ID: 7)
+Observation: The coat (ID: 7) is removed from the dryer (ID: 3). You put the coat (ID: 7) in your inventory.
+
+Current step: 36
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put coat (ID: 7) in basket (ID: 12)
+Observation: The coat (ID: 7) is removed from the agent (ID: 0).
+The coat (ID: 7) is placed in the basket (ID: 12).
+
+Current step: 37
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take shirt (ID: 8)
+Observation: The shirt (ID: 8) is removed from the dryer (ID: 3). You put the shirt (ID: 8) in your inventory.
+
+Current step: 38
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put shirt (ID: 8) in basket (ID: 12)
+Observation: The shirt (ID: 8) is removed from the agent (ID: 0).
+The shirt (ID: 8) is placed in the basket (ID: 12).
+
+Current step: 39
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take vest (ID: 9)
+Observation: The vest (ID: 9) is removed from the room (ID: 1). You put the vest (ID: 9) in your inventory.
+
+Current step: 40
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put vest (ID: 9) in basket (ID: 12)
+Observation: The vest (ID: 9) is removed from the agent (ID: 0).
+The vest (ID: 9) is placed in the basket (ID: 12).
+
+Current step: 41
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take dress (ID: 10)
+Observation: The dress (ID: 10) is removed from the room (ID: 1). You put the dress (ID: 10) in your inventory.
+
+Current step: 42
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put dress (ID: 10) in basket (ID: 12)
+Observation: The dress (ID: 10) is removed from the agent (ID: 0).
+The dress (ID: 10) is placed in the basket (ID: 12).
+
+Current step: 43
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take sweater (ID: 11)
+Observation: The sweater (ID: 11) is removed from the room (ID: 1). You put the sweater (ID: 11) in your inventory.
+
+Current step: 44
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put sweater (ID: 11) in basket (ID: 12)
+Observation: The sweater (ID: 11) is removed from the agent (ID: 0).
+The sweater (ID: 11) is placed in the basket (ID: 12).
+
+Current step: 45
+Score: 1
+Reward: 1
+Game Over: True
+Game Won: True
+
+----------------------------------------

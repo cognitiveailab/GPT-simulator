@@ -1,0 +1,117 @@
+Task Description: Your task is to figure out if the fork is conductive or not. If the fork is conductive, put it in the red box. Otherwise, put it in the black box.
+
+Initial Observation: You find yourself in a room.  In the room, you see:
+        yourself
+        a light bulb (ID: 2) which is off
+        a red wire (ID: 3)
+        a black wire (ID: 4)
+        a blue wire (ID: 5)
+        a battery (ID: 6)
+        a fork (ID: 7)
+        the red box (ID: 8)
+        the black box (ID: 9)
+
+
+Type 'help' for a list of possible actions.
+
+> connect light bulb (ID: 2) terminal1 to red wire (ID: 3) terminal1
+Observation: Successfully connect light bulb (ID: 2) terminal1 to red wire (ID: 3) terminal1
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> connect red wire (ID: 3) terminal2 to battery (ID: 6) anode
+Observation: Successfully connect red wire (ID: 3) terminal2 to battery (ID: 6) anode
+
+Current step: 2
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> connect battery (ID: 6) cathode to black wire (ID: 4) terminal1
+Observation: Successfully connect battery (ID: 6) cathode to black wire (ID: 4) terminal1
+
+Current step: 3
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> connect black wire (ID: 4) terminal2 to fork (ID: 7) terminal1
+Observation: Successfully connect black wire (ID: 4) terminal2 to fork (ID: 7) terminal1
+
+Current step: 4
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> connect fork (ID: 7) terminal2 to blue wire (ID: 5) terminal1
+Observation: Successfully connect fork (ID: 7) terminal2 to blue wire (ID: 5) terminal1
+
+Current step: 5
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> connect blue wire (ID: 5) terminal2 to light bulb (ID: 2) terminal2
+Observation: Successfully connect blue wire (ID: 5) terminal2 to light bulb (ID: 2) terminal2
+
+Current step: 6
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a room.  In the room, you see:
+        yourself
+        a light bulb (ID: 2) which is on and connects to red wire (ID: 3) terminal1 and blue wire (ID: 5) terminal2
+        a red wire (ID: 3) connecting to light bulb (ID: 2) terminal1 and battery (ID: 6) anode
+        a black wire (ID: 4) connecting to battery (ID: 6) cathode and fork (ID: 7) terminal1
+        a blue wire (ID: 5) connecting to fork (ID: 7) terminal2 and light bulb (ID: 2) terminal2
+        a battery (ID: 6) connecting to black wire (ID: 4) terminal1 and red wire (ID: 3) terminal2
+        a fork (ID: 7) connecting to black wire (ID: 4) terminal2 and blue wire (ID: 5) terminal1
+        the red box (ID: 8)
+        the black box (ID: 9)
+
+
+Current step: 7
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take fork (ID: 7)
+Observation: The fork (ID: 7) is removed from the room (ID: 1). You put the fork (ID: 7) in your inventory.
+
+Current step: 8
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put fork (ID: 7) in red box (ID: 8)
+Observation: The fork (ID: 7) is removed from the agent (ID: 0).
+The fork (ID: 7) is placed in the red box (ID: 8).
+
+Current step: 9
+Score: 1
+Reward: 1
+Game Over: True
+Game Won: True
+
+----------------------------------------

@@ -1,0 +1,85 @@
+Task Description: Your task is to take a nice picture of orange (ID: 4), using a camera with shutter speed of 1/2, aperture of 16, and iso of 1600.
+
+Initial Observation: You find yourself in a kitchen.  In the kitchen, you see:
+        yourself
+        A loaded camera (ID: 2), the current shutter speed, aperture, and iso are 1, 11, and 6400, it is currently focusing on nothing.
+To change the shutter speed, aperture, or iso settings, one can rotate the corresponding dials either clockwise or the opposite direction.
+The min/max available shutter speed is 1/4000 and 8.
+The min/max available aperture is 1.4 and 16.
+The min/max available iso is 64 and 6400.
+        a peanut butter (ID: 3)
+        a orange (ID: 4)
+
+
+Type 'help' for a list of possible actions.
+
+> take camera (ID: 2)
+Observation: The camera (ID: 2) is removed from the kitchen (ID: 1). You put the camera (ID: 2) in your inventory.
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> focus orange (ID: 4)
+Observation: The camera is now focusing on orange (ID: 4).
+
+Current step: 2
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> rotate aperture clockwise
+Observation: You rotated the aperture dial to 16
+
+Current step: 3
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> rotate shutter speed anticlockwise
+Observation: You rotated the shutter speed dial to 1/2
+
+Current step: 4
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> rotate iso anticlockwise
+Observation: You rotated the iso dial to 3200
+
+Current step: 5
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> rotate iso anticlockwise
+Observation: You rotated the iso dial to 1600
+
+Current step: 6
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> press shutter
+Observation: You took a photo of orange (ID: 4), with shutter speed of 1/2, aperture of 16, and iso of 1600.
+
+Current step: 7
+Score: 1
+Reward: 1
+Game Over: True
+Game Won: True
+
+----------------------------------------

@@ -1,0 +1,86 @@
+Task Description: Your task is to conduct a space walk.
+
+Initial Observation: You find yourself in a spaceship (ID: 2).  In the spaceship (ID: 2), you see:
+        yourself
+        a space suit (ID: 7)
+You also see:
+         a inner door (ID: 5) that is closed
+
+
+Type 'help' for a list of possible actions.
+
+> put on space suit (ID: 7)
+Observation: The space suit (ID: 7) is removed from the spaceship (ID: 2). You put on the space suit (ID: 7).
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> open inner door (ID: 5)
+Observation: You open the inner door (ID: 5) to the airlock (ID: 3).
+
+Current step: 2
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> move to airlock (ID: 3)
+Observation: You move from spaceship (ID: 2) to airlock (ID: 3).
+
+Current step: 3
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a airlock (ID: 3).  In the airlock (ID: 3), you see:
+        yourself
+You also see:
+         a inner door (ID: 5) that is open
+         a outer door (ID: 6) that is closed
+
+
+Current step: 4
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> close inner door (ID: 5)
+Observation: You close the inner door (ID: 5) to the spaceship (ID: 2).
+
+Current step: 5
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> open outer door (ID: 6)
+Observation: You open the outer door (ID: 6) to the outer space (ID: 4).
+
+Current step: 6
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> move to outer space (ID: 4)
+Observation: You move from airlock (ID: 3) to outer space (ID: 4).
+
+Current step: 7
+Score: 1
+Reward: 1
+Game Over: True
+Game Won: True
+
+----------------------------------------

@@ -1,0 +1,173 @@
+Task Description: Your task is to boil water.
+
+Initial Observation: You find yourself in a kitchen.  In the kitchen, you see:
+        yourself
+        a stove (ID: 2) that is currently off and has nothing on it.
+        a sink (ID: 3) that is empty
+        a pot (ID: 4) that is empty
+        a peanut butter (ID: 5)
+        a orange (ID: 6)
+
+
+Type 'help' for a list of possible actions.
+
+> take pot (ID: 4)
+Observation: The pot (ID: 4) is removed from the kitchen (ID: 1). You put the pot (ID: 4) in your inventory.
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put pot (ID: 4) in sink (ID: 3)
+Observation: The pot (ID: 4) is removed from the agent (ID: 0).
+The pot (ID: 4) is placed in the sink (ID: 3).
+
+Current step: 2
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> examine sink (ID: 3)
+Observation: a sink (ID: 3) that contains the following items:
+        a pot (ID: 4) that is empty
+
+
+Current step: 3
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> turn on sink (ID: 3)
+Observation: The sink (ID: 3) is now turned on.
+
+Current step: 4
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> examine sink (ID: 3)
+Observation: a sink (ID: 3) that contains the following items:
+        a pot (ID: 4) that looks to have some water in it
+
+
+Current step: 5
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> turn off sink (ID: 3)
+Observation: The sink (ID: 3) is now turned off.
+
+Current step: 6
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take pot (ID: 4)
+Observation: The pot (ID: 4) is removed from the sink (ID: 3). You put the pot (ID: 4) in your inventory.
+
+Current step: 7
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a kitchen.  In the kitchen, you see:
+        yourself
+        a stove (ID: 2) that is currently off and has nothing on it.
+        a sink (ID: 3) that is empty
+        a peanut butter (ID: 5)
+        a orange (ID: 6)
+
+
+Current step: 8
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put pot (ID: 4) on stove (ID: 2)
+Observation: The pot (ID: 4) is removed from the agent (ID: 0).
+The pot (ID: 4) is placed in the stove (ID: 2).
+
+Current step: 9
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> examine stove (ID: 2)
+Observation: a stove (ID: 2) that is currently off and has the following items on it:
+        a pot (ID: 4) that looks to have some water in it
+
+
+Current step: 10
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> turn on stove (ID: 2)
+Observation: The stove (ID: 2) is now turned on.
+
+Current step: 11
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> examine stove (ID: 2)
+Observation: a stove (ID: 2) that is currently on and has the following items on it:
+        a pot (ID: 4) that looks to have some water in it
+
+
+Current step: 12
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> examine stove (ID: 2)
+Observation: a stove (ID: 2) that is currently on and has the following items on it:
+        a pot (ID: 4) that looks to have some water in it
+
+
+Current step: 13
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> examine stove (ID: 2)
+Observation: a stove (ID: 2) that is currently on and has the following items on it:
+        a pot (ID: 4) that looks to have some water in it
+
+
+Current step: 14
+Score: 1
+Reward: 1
+Game Over: True
+Game Won: True
+
+----------------------------------------

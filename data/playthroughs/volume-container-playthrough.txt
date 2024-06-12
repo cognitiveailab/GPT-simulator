@@ -1,0 +1,104 @@
+Task Description: Your task is to figure out the volume of the glass.
+
+Initial Observation: You are in a room.  In the room, you see:
+        yourself
+        a sink (ID: 2) that is currently off and that is empty
+        a mug (ID: 3) that is empty
+        a glass (ID: 4) that is empty
+        a cup (ID: 5) that is empty
+        a bowl (ID: 6) that is empty
+        a bottle (ID: 7) that is empty
+        a graduated cylinder (ID: 8) that is empty
+
+
+Type 'help' for a list of possible actions.
+
+> take glass (ID: 4)
+Observation:  You put the glass (ID: 4) in your inventory.
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put glass (ID: 4) in sink (ID: 2)
+Observation:
+The glass (ID: 4) is placed in the sink (ID: 2).
+
+Current step: 2
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> turn on sink (ID: 2)
+Observation: The sink (ID: 2) is now turned on.
+
+Current step: 3
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> turn off sink (ID: 2)
+Observation: The sink (ID: 2) is now turned off.
+
+Current step: 4
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take glass (ID: 4)
+Observation:  You put the glass (ID: 4) in your inventory.
+
+Current step: 5
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> pour water in glass (ID: 4) into graduated cylinder (ID: 8)
+Observation: You pour water in graduated cylinder (ID: 8) into graduated cylinder (ID: 8)
+
+Current step: 6
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You are in a room.  In the room, you see:
+        yourself
+        a sink (ID: 2) that is currently off and that is empty
+        a mug (ID: 3) that is empty
+        a cup (ID: 5) that is empty
+        a bowl (ID: 6) that is empty
+        a bottle (ID: 7) that is empty
+        a graduated cylinder (ID: 8) containing 167 mL water (ID: 9)
+
+
+Current step: 7
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> answer 167 mL
+Observation: You believe the volume of the glass is 167 mL.
+
+Current step: 8
+Score: 1
+Reward: 1
+Game Over: True
+Game Won: True
+
+----------------------------------------

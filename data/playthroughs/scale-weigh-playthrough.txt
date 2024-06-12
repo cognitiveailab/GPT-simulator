@@ -1,0 +1,62 @@
+Task Description: Your task is to figure out the weight of the apple.
+
+Initial Observation: You find yourself in a room. In the room, you see:
+        yourself
+        a pear (ID: 2)
+        an orange (ID: 3)
+        a banana (ID: 4)
+        an apple (ID: 5)
+        a peach (ID: 6)
+        a scale (ID: 7) which reads 0g
+
+
+Type 'help' for a list of possible actions.
+
+> take apple (ID: 5)
+Observation: The apple (ID: 5) is removed from the room (ID: 1). You put the apple (ID: 5) in your inventory.
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put apple (ID: 5) on scale (ID: 7)
+Observation: The apple (ID: 5) is removed from the agent (ID: 0).
+The apple (ID: 5) is placed in the scale (ID: 7).
+
+Current step: 2
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself in a room. In the room, you see:
+        yourself
+        a pear (ID: 2)
+        an orange (ID: 3)
+        a banana (ID: 4)
+        a peach (ID: 6)
+        a scale which reads 181g and contains an apple (ID: 5)
+
+
+Current step: 3
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> answer 181g
+Observation: You believe the weight of the apple is 181g.
+
+Current step: 4
+Score: 1
+Reward: 1
+Game Over: True
+Game Won: True
+
+----------------------------------------

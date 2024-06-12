@@ -1,0 +1,107 @@
+Task Description: Your task is to clean the garbage on the ground to the garbage can.
+
+Initial Observation: You find yourself in a room.  In the room, you see:
+        yourself
+        a(n) broom (ID: 2)
+        an empty dustpan (ID: 3)
+        an empty garbage can (ID: 4)
+        watermelon rind (ID: 5) on the ground
+        dust (ID: 6) on the ground
+        waste paper (ID: 7) on the ground
+        broken glass (ID: 8) on the ground
+        dog hair (ID: 9) on the ground
+        a(n) mop (ID: 10)
+
+
+Type 'help' for a list of possible actions.
+
+> take broom (ID: 2)
+Observation: The broom (ID: 2) is removed from the room (ID: 1). You put the broom (ID: 2) in your inventory.
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take dustpan (ID: 3)
+Observation: The dustpan (ID: 3) is removed from the room (ID: 1). You put the dustpan (ID: 3) in your inventory.
+
+Current step: 2
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> sweep watermelon rind (ID: 5) to dustpan (ID: 3) with broom (ID: 2)
+Observation: You sweep watermelon rind (ID: 5) to dustpan (ID: 3).
+
+Current step: 3
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> sweep dust (ID: 6) to dustpan (ID: 3) with broom (ID: 2)
+Observation: You sweep dust (ID: 6) to dustpan (ID: 3).
+
+Current step: 4
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> sweep waste paper (ID: 7) to dustpan (ID: 3) with broom (ID: 2)
+Observation: You sweep waste paper (ID: 7) to dustpan (ID: 3).
+
+Current step: 5
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> sweep broken glass (ID: 8) to dustpan (ID: 3) with broom (ID: 2)
+Observation: You sweep broken glass (ID: 8) to dustpan (ID: 3).
+
+Current step: 6
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> sweep dog hair (ID: 9) to dustpan (ID: 3) with broom (ID: 2)
+Observation: You sweep dog hair (ID: 9) to dustpan (ID: 3).
+
+Current step: 7
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> open garbage can (ID: 4)
+Observation: The garbage can (ID: 4) is now open.
+
+Current step: 8
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> dump dustpan (ID: 3) to garbage can (ID: 4)
+Observation: You emptied the dustpan (ID: 3) to the garbage can (ID: 4).
+
+Current step: 9
+Score: 1
+Reward: 1
+Game Over: True
+Game Won: True
+
+----------------------------------------

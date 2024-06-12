@@ -1,0 +1,67 @@
+Task Description: Your task is to hang the picture of a girl (ID: 11) on the back wall (ID: 5).
+
+Initial Observation: You find yourself in a living room.  In the living room, you see:
+        yourself
+        a left wall (ID: 2)
+        a right wall (ID: 3)
+        a front wall (ID: 4)
+        a back wall (ID: 5)
+        a hammer (ID: 6)
+        a nail (ID: 7)
+        a picture of a car (ID: 8)
+        a picture of a dog (ID: 9)
+        a picture of a palace (ID: 10)
+        a picture of a girl (ID: 11)
+        a picture of a moutain (ID: 12)
+
+
+Type 'help' for a list of possible actions.
+
+> take nail (ID: 7)
+Observation: The nail (ID: 7) is removed from the living room (ID: 1). You put the nail (ID: 7) in your inventory.
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take hammer (ID: 6)
+Observation: The hammer (ID: 6) is removed from the living room (ID: 1). You put the hammer (ID: 6) in your inventory.
+
+Current step: 2
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> hammer nail (ID: 7) on back wall (ID: 5) with hammer (ID: 6)
+Observation: The nail (ID: 7) is hammered on the back wall (ID: 5).
+
+Current step: 3
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take picture of a girl (ID: 11)
+Observation: The picture of a girl (ID: 11) is removed from the living room (ID: 1). You put the picture of a girl (ID: 11) in your inventory.
+
+Current step: 4
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> hang picture of a girl (ID: 11) on nail (ID: 7)
+Observation: You hang the picture of a girl (ID: 11) on the nail (ID: 7).
+
+Current step: 5
+Score: 1
+Reward: 1
+Game Over: True
+Game Won: True

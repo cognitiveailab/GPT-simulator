@@ -1,0 +1,225 @@
+Task Description: Your task is to find the buried metal case on the beach. You win the game by putting the metal case in your inventory.
+
+Initial Observation: You find yourself on a beach_2_1 (ID: 9).  on the beach_2_1 (ID: 9), you see:
+        yourself
+        a metal detector (ID: 15)
+        a shovel (ID: 16)
+You also see:
+         a way to north
+         a way to east
+         a way to west
+
+
+Type 'help' for a list of possible actions.
+
+> take metal detector (ID: 15)
+Observation: The metal detector (ID: 15) is removed from the beach_2_1 (ID: 9). You put the metal detector (ID: 15) in your inventory.
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take shovel (ID: 16)
+Observation: The shovel (ID: 16) is removed from the beach_2_1 (ID: 9). You put the shovel (ID: 16) in your inventory.
+
+Current step: 2
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> detect with metal detector (ID: 15)
+Observation: Nothing happens.
+
+Current step: 3
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> move north
+Observation: You move north.
+
+Current step: 4
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> detect with metal detector (ID: 15)
+Observation: Nothing happens.
+
+Current step: 5
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> move north
+Observation: You move north.
+
+Current step: 6
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> detect with metal detector (ID: 15)
+Observation: Nothing happens.
+
+Current step: 7
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> move east
+Observation: You move east.
+
+Current step: 8
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> detect with metal detector (ID: 15)
+Observation: Nothing happens.
+
+Current step: 9
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> move south
+Observation: You move south.
+
+Current step: 10
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> detect with metal detector (ID: 15)
+Observation: Nothing happens.
+
+Current step: 11
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> move south
+Observation: You move south.
+
+Current step: 12
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> detect with metal detector (ID: 15)
+Observation: Nothing happens.
+
+Current step: 13
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> move west
+Observation: You move west.
+
+Current step: 14
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> move west
+Observation: You move west.
+
+Current step: 15
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> detect with metal detector (ID: 15)
+Observation: The metal detector (ID: 15) pings!
+
+Current step: 16
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself on a beach_2_0 (ID: 8).  on the beach_2_0 (ID: 8), you see:
+        yourself
+You also see:
+         a way to north
+         a way to east
+
+
+Current step: 17
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> dig with shovel (ID: 16)
+Observation: You dig with shovel (ID: 16).
+
+Current step: 18
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself on a beach_2_0 (ID: 8).  on the beach_2_0 (ID: 8), you see:
+        a metal case (ID: 11)
+        yourself
+You also see:
+         a way to north
+         a way to east
+
+
+Current step: 19
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take metal case (ID: 11)
+Observation: The metal case (ID: 11) is removed from the beach_2_0 (ID: 8). You put the metal case (ID: 11) in your inventory.
+
+Current step: 20
+Score: 1
+Reward: 1
+Game Over: True
+Game Won: True
+
+----------------------------------------

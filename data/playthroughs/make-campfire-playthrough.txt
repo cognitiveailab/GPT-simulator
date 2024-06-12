@@ -1,0 +1,113 @@
+Task Description: Your task is to make a fire in the fire pit.
+
+Initial Observation: You find yourself outside in a forest.  Around you, you see:
+        yourself
+        a fire pit (ID: 2) that is empty
+        a match (ID: 3)
+        an axe (ID: 4)
+        a tree (ID: 5)
+
+
+Type 'help' for a list of possible actions.
+
+> take axe (ID: 4)
+Observation: The axe (ID: 4) is removed from the forest (ID: 1). You put the axe (ID: 4) in your inventory.
+
+Current step: 1
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> use axe (ID: 4) on tree (ID: 5)
+Observation: You use the axe (ID: 4) to chop the tree (ID: 5).
+
+Current step: 2
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself outside in a forest.  Around you, you see:
+        yourself
+        a fire pit (ID: 2) that is empty
+        a match (ID: 3)
+        a chopped down tree (ID: 5)
+
+
+Current step: 3
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> use axe (ID: 4) on chopped down tree (ID: 5)
+Observation: You use the axe (ID: 4) to chop the chopped down tree (ID: 5).
+
+Current step: 4
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> look
+Observation: You find yourself outside in a forest.  Around you, you see:
+        yourself
+        a fire pit (ID: 2) that is empty
+        a match (ID: 3)
+        some firewood (ID: 5)
+
+
+Current step: 5
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take firewood (ID: 5)
+Observation: The firewood (ID: 5) is removed from the forest (ID: 1). You put the firewood (ID: 5) in your inventory.
+
+Current step: 6
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> put firewood (ID: 5) in fire pit (ID: 2)
+Observation: The firewood (ID: 5) is removed from the agent (ID: 0).
+The firewood (ID: 5) is placed in the fire pit (ID: 2).
+
+Current step: 7
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> take match (ID: 3)
+Observation: The match (ID: 3) is removed from the forest (ID: 1). You put the match (ID: 3) in your inventory.
+
+Current step: 8
+Score: 0
+Reward: 0
+Game Over: False
+Game Won: False
+
+----------------------------------------
+> use match (ID: 3) on firewood (ID: 5)
+Observation: You use the match to light the firewood (ID: 5) on fire. The match is used up.
+
+Current step: 9
+Score: 1
+Reward: 1
+Game Over: True
+Game Won: True
+
+----------------------------------------
